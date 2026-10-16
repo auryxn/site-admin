@@ -66,43 +66,10 @@ log(db.prepare('SELECT name_ru,name_lt,name_en,title_ru,title_lt,title_en,years_
 // ---------------------------------------------------------------------------
 // TASK 1 — sweep other tables: repair empty / untranslated / broken lt/en
 // ---------------------------------------------------------------------------
-// Curated lt/en for experience descriptions & companies (companies are brands
-// and stay identical; "Фриланс" is translated).
-const EXP_TRANSLATIONS = {
-  1: { company: { lt: 'Orbita', en: 'Orbita' }, description: {
-        lt: 'Tech Lead. 6 žmonių komanda. Monolitas išskaidytas į servisus, API triskart greitesnis.',
-        en: 'Tech Lead. A team of 6. Broke the monolith into services, API three times faster.' } },
-  2: { company: { lt: 'Pixelforge', en: 'Pixelforge' }, description: {
-        lt: 'Senior Developer. Analitika su React ir Go 200 tūkstančių žmonių.',
-        en: 'Senior Developer. Analytics in React and Go for 200 thousand people.' } },
-  3: { company: { lt: 'Kvant', en: 'Kvant' }, description: {
-        lt: 'Frontend. Dizaino sistema ir automatizuoti testai.',
-        en: 'Frontend. Design system and automated tests.' } },
-  4: { company: { lt: 'Laisvai samdomas', en: 'Freelance' }, description: {
-        lt: 'Svetainės, botai, programėlės. Daug klaidų.',
-        en: 'Websites, bots, apps. Lots of mistakes.' } },
-};
-for (const [id, tr] of Object.entries(EXP_TRANSLATIONS)) {
-  const cur = db.prepare('SELECT * FROM experience WHERE id = ?').get(Number(id));
-  if (!cur) continue;
-  const sets = [];
-  const vals = [];
-  for (const field of ['company', 'description']) {
-    for (const lang of ['lt', 'en']) {
-      const target = tr[field][lang];
-      // repair only when empty or still plain Russian (== _ru)
-      if (!cur[`${field}_${lang}`] || cur[`${field}_${lang}`] === cur[`${field}_ru`]) {
-        sets.push(`${field}_${lang} = ?`);
-        vals.push(target);
-      }
-    }
-  }
-  if (sets.length) {
-    vals.push(Number(id));
-    db.prepare(`UPDATE experience SET ${sets.join(', ')} WHERE id = ?`).run(...vals);
-    log(`[task1] experience#${id} repaired: ${sets.join(', ')}`);
-  }
-}
+// NOTE: the old fictional experience entries (Orbita/Pixelforge/Kvant/Фриланс)
+// were removed from the portfolio on request. server/db.js now seeds the three
+// real entries with correct lt/en, so this one-off per-ID repair is obsolete
+// and intentionally left out (it used fragile AUTOINCREMENT ids).
 
 // Generic sweep: any translatable column in projects/stack/experience that is
 // empty, or identical to its _ru value AND known to be Russian prose, gets a

@@ -76,21 +76,6 @@
         "sort_order": 6
       },
       {
-        "id": 15,
-        "title": "ai-creative-studio",
-        "description": "Next.js MVP — рабочее место для AI-производства видео.",
-        "stack": "Next.js 15, React 19, TypeScript, Tailwind",
-        "bullets": [
-          "Дашборд с прогрессом производства фильмов",
-          "Сценарий, раскадровка и персонажи",
-          "Конструктор промптов с версионированием",
-          "Хранение локально, с переходом на Supabase"
-        ],
-        "image_url": "/uploads/img-1792166303456-f0c301d3.png",
-        "repo_url": "https://github.com/auryxn/ai-creative-studio",
-        "sort_order": 7
-      },
-      {
         "id": 16,
         "title": "baltic-brew",
         "description": "Одностраничный лендинг крафтового бара Baltic Brew.",
@@ -265,32 +250,25 @@
     ],
     "experience": [
       {
-        "id": 1,
-        "period": "2024+",
-        "company": "Orbita",
-        "description": "Tech Lead. Команда из 6 человек. Монолит в сервисы, API быстрее втрое.",
+        "id": 5,
+        "period": "2024–2028",
+        "company": "Университет",
+        "description": "Учусь на программиста с 2024 года, выпуск в 2028",
         "sort_order": 1
       },
       {
-        "id": 2,
-        "period": "2021–24",
-        "company": "Pixelforge",
-        "description": "Senior Developer. Аналитика на React и Go для 200 тысяч человек.",
+        "id": 6,
+        "period": "2025",
+        "company": "Хакатон Junction",
+        "description": "Летал в Финляндию на хакатон Junction — крупнейший в Европе",
         "sort_order": 2
       },
       {
-        "id": 3,
-        "period": "2019–21",
-        "company": "Kvant",
-        "description": "Frontend. Дизайн-система и автотесты.",
+        "id": 7,
+        "period": "2026 →",
+        "company": "ООО «У меня локально работает»",
+        "description": "Ищу работу. Пока не нашли — работаю на своей машине (локально у меня всё работает).",
         "sort_order": 3
-      },
-      {
-        "id": 4,
-        "period": "2017–19",
-        "company": "Фриланс",
-        "description": "Сайты, боты, приложения. Много ошибок.",
-        "sort_order": 4
       }
     ],
     "links": [
@@ -441,21 +419,6 @@
         "image_url": "/uploads/img-1792166303449-f8b37953.png",
         "repo_url": "https://github.com/auryxn/internet-city",
         "sort_order": 6
-      },
-      {
-        "id": 15,
-        "title": "ai-creative-studio",
-        "description": "Next.js MVP — darbo vieta AI vaizdo įrašų gamybai.",
-        "stack": "Next.js 15, React 19, TypeScript, Tailwind",
-        "bullets": [
-          "Skydelis su filmų gamybos eiga",
-          "Scenarijus, storyboard ir veikėjai",
-          "Užklausų konstruktorius su versijavimu",
-          "Saugoma lokaliai, su perėjimu prie Supabase"
-        ],
-        "image_url": "/uploads/img-1792166303456-f0c301d3.png",
-        "repo_url": "https://github.com/auryxn/ai-creative-studio",
-        "sort_order": 7
       },
       {
         "id": 16,
@@ -632,32 +595,25 @@
     ],
     "experience": [
       {
-        "id": 1,
-        "period": "2024+",
-        "company": "Orbita",
-        "description": "Tech Lead. 6 žmonių komanda. Monolitas išskaidytas į servisus, API triskart greitesnis.",
+        "id": 5,
+        "period": "2024–2028",
+        "company": "Vilniaus universitetas",
+        "description": "Studijuoju programavimą nuo 2024 m., baigiu 2028 m.",
         "sort_order": 1
       },
       {
-        "id": 2,
-        "period": "2021–24",
-        "company": "Pixelforge",
-        "description": "Senior Developer. Analitika su React ir Go 200 tūkstančių žmonių.",
+        "id": 6,
+        "period": "2025",
+        "company": "Junction hakatonas",
+        "description": "Skridau į Suomiją į Junction, didžiausią Europos hakatoną",
         "sort_order": 2
       },
       {
-        "id": 3,
-        "period": "2019–21",
-        "company": "Kvant",
-        "description": "Frontend. Dizaino sistema ir automatizuoti testai.",
+        "id": 7,
+        "period": "2026 →",
+        "company": "UAB „Pas mane lokaliai veikia“",
+        "description": "Ieškau darbo. Kol neradau — dirbu savo kompiuteryje (pas mane lokaliai viskas veikia).",
         "sort_order": 3
-      },
-      {
-        "id": 4,
-        "period": "2017–19",
-        "company": "Laisvai samdomas",
-        "description": "Svetainės, botai, programėlės. Daug klaidų.",
-        "sort_order": 4
       }
     ],
     "links": [
@@ -808,21 +764,6 @@
         "image_url": "/uploads/img-1792166303449-f8b37953.png",
         "repo_url": "https://github.com/auryxn/internet-city",
         "sort_order": 6
-      },
-      {
-        "id": 15,
-        "title": "ai-creative-studio",
-        "description": "A Next.js MVP — a workspace for AI video production.",
-        "stack": "Next.js 15, React 19, TypeScript, Tailwind",
-        "bullets": [
-          "Dashboard with movie production progress",
-          "Script, storyboard and characters",
-          "Prompt builder with versioning",
-          "Stored locally, with a path to Supabase"
-        ],
-        "image_url": "/uploads/img-1792166303456-f0c301d3.png",
-        "repo_url": "https://github.com/auryxn/ai-creative-studio",
-        "sort_order": 7
       },
       {
         "id": 16,
@@ -999,32 +940,25 @@
     ],
     "experience": [
       {
-        "id": 1,
-        "period": "2024+",
-        "company": "Orbita",
-        "description": "Tech Lead. A team of 6. Broke the monolith into services, API three times faster.",
+        "id": 5,
+        "period": "2024–2028",
+        "company": "University",
+        "description": "Studying Computer Science since 2024, graduating in 2028",
         "sort_order": 1
       },
       {
-        "id": 2,
-        "period": "2021–24",
-        "company": "Pixelforge",
-        "description": "Senior Developer. Analytics in React and Go for 200 thousand people.",
+        "id": 6,
+        "period": "2025",
+        "company": "Junction Hackathon",
+        "description": "Flew to Finland for Junction, Europe's biggest hackathon",
         "sort_order": 2
       },
       {
-        "id": 3,
-        "period": "2019–21",
-        "company": "Kvant",
-        "description": "Frontend. Design system and automated tests.",
+        "id": 7,
+        "period": "2026 →",
+        "company": "Works On My Machine LLC",
+        "description": "Looking for work. Until I'm hired, I work on my own machine (it works locally for me).",
         "sort_order": 3
-      },
-      {
-        "id": 4,
-        "period": "2017–19",
-        "company": "Freelance",
-        "description": "Websites, bots, apps. Lots of mistakes.",
-        "sort_order": 4
       }
     ],
     "links": [

@@ -274,20 +274,6 @@ const SEED_PROJECTS = [
     },
   },
   {
-    title: { ru: 'ai-creative-studio', lt: 'ai-creative-studio', en: 'ai-creative-studio' },
-    description: {
-      ru: 'Next.js MVP — рабочее место для AI-производства видео.',
-      lt: 'Next.js MVP — darbo vieta AI vaizdo įrašų gamybai.',
-      en: 'A Next.js MVP — a workspace for AI video production.',
-    },
-    stack: { ru: 'Next.js 15, React 19, TypeScript, Tailwind', lt: 'Next.js 15, React 19, TypeScript, Tailwind', en: 'Next.js 15, React 19, TypeScript, Tailwind' },
-    bullets: {
-      ru: ['Дашборд с прогрессом производства фильмов', 'Сценарий, раскадровка и персонажи', 'Конструктор промптов с версионированием', 'Хранение локально, с переходом на Supabase'],
-      lt: ['Skydelis su filmų gamybos eiga', 'Scenarijus, storyboard ir veikėjai', 'Užklausų konstruktorius su versijavimu', 'Saugoma lokaliai, su perėjimu prie Supabase'],
-      en: ['Dashboard with movie production progress', 'Script, storyboard and characters', 'Prompt builder with versioning', 'Stored locally, with a path to Supabase'],
-    },
-  },
-  {
     title: { ru: 'baltic-brew', lt: 'baltic-brew', en: 'baltic-brew' },
     description: {
       ru: 'Одностраничный лендинг крафтового бара Baltic Brew.',
@@ -308,6 +294,8 @@ const SEED_PROJECTS = [
 const LEGACY_PROJECT_TITLES = [
   'Pulse', 'Lumen', 'Fernweh', 'Quill', 'Nimbus', 'Echo',
   'velora-cafe', 'kavine-koralai',
+  // ai-creative-studio was dropped from the portfolio on request.
+  'ai-creative-studio',
 ];
 
 /* eslint-disable no-unused-vars */
@@ -400,7 +388,7 @@ const _OLD_SEED_PROJECTS = [
 /* eslint-enable no-unused-vars */
 
 // Real tech stack used across the portfolio projects (site-admin, barlink,
-// filmrank, internet-city, ai-creative-studio, shiftbot, content-factory,
+// filmrank, internet-city, shiftbot, content-factory,
 // homework-hub) and the university work (sdc-academic-labs: Java/Spring Boot,
 // Selenium/TestNG; SQL & data processing; networking; Python data analysis).
 // Technical brand names — kept identical across languages; the multilingual
@@ -411,48 +399,57 @@ const SEED_STACK_NAMES = [
   'Git', 'Linux', 'Java', 'Spring Boot', 'C#', 'Unity', 'SQL', 'Networking',
 ].map((name, i) => ({ name: { ru: name, lt: name, en: name }, sort_order: i + 1 }));
 
+// Real experience entries (no more fictional Orbita/Pixelforge/Kvant/Freelance).
+// 1 = university (studies), 2 = Junction hackathon, 3 = the joke "job hunting"
+// entry — the site's tone is self-deprecating Web 1.0 humour, so the last row
+// is intentionally a programmer joke.
 const SEED_EXPERIENCE = [
   {
-    period: '2024+',
-    company: { ru: 'Orbita', lt: 'Orbita', en: 'Orbita' },
+    period: '2024–2028',
+    company: {
+      ru: 'Университет',
+      lt: 'Vilniaus universitetas',
+      en: 'University',
+    },
     description: {
-      ru: 'Tech Lead. Команда из 6 человек. Монолит в сервисы, API быстрее втрое.',
-      lt: 'Tech Lead. 6 žmonių komanda. Monolitas išskaidytas į servisus, API triskart greitesnis.',
-      en: 'Tech Lead. A team of 6. Broke the monolith into services, API three times faster.',
+      ru: 'Учусь на программиста с 2024 года, выпуск в 2028',
+      lt: 'Studijuoju programavimą nuo 2024 m., baigiu 2028 m.',
+      en: 'Studying Computer Science since 2024, graduating in 2028',
     },
     sort_order: 1,
   },
   {
-    period: '2021–24',
-    company: { ru: 'Pixelforge', lt: 'Pixelforge', en: 'Pixelforge' },
+    period: '2025',
+    company: {
+      ru: 'Хакатон Junction',
+      lt: 'Junction hakatonas',
+      en: 'Junction Hackathon',
+    },
     description: {
-      ru: 'Senior Developer. Аналитика на React и Go для 200 тысяч человек.',
-      lt: 'Senior Developer. Analitika su React ir Go 200 tūkstančių žmonių.',
-      en: 'Senior Developer. Analytics in React and Go for 200 thousand people.',
+      ru: 'Летал в Финляндию на хакатон Junction — крупнейший в Европе',
+      lt: 'Skridau į Suomiją į Junction, didžiausią Europos hakatoną',
+      en: "Flew to Finland for Junction, Europe's biggest hackathon",
     },
     sort_order: 2,
   },
   {
-    period: '2019–21',
-    company: { ru: 'Kvant', lt: 'Kvant', en: 'Kvant' },
+    period: '2026 →',
+    company: {
+      ru: 'ООО «У меня локально работает»',
+      lt: 'UAB „Pas mane lokaliai veikia“',
+      en: 'Works On My Machine LLC',
+    },
     description: {
-      ru: 'Frontend. Дизайн-система и автотесты.',
-      lt: 'Frontend. Dizaino sistema ir automatizuoti testai.',
-      en: 'Frontend. Design system and automated tests.',
+      ru: 'Ищу работу. Пока не нашли — работаю на своей машине (локально у меня всё работает).',
+      lt: 'Ieškau darbo. Kol neradau — dirbu savo kompiuteryje (pas mane lokaliai viskas veikia).',
+      en: "Looking for work. Until I'm hired, I work on my own machine (it works locally for me).",
     },
     sort_order: 3,
   },
-  {
-    period: '2017–19',
-    company: { ru: 'Фриланс', lt: 'Laisvai samdomas', en: 'Freelance' },
-    description: {
-      ru: 'Сайты, боты, приложения. Много ошибок.',
-      lt: 'Svetainės, botai, programėlės. Daug klaidų.',
-      en: 'Websites, bots, apps. Lots of mistakes.',
-    },
-    sort_order: 4,
-  },
 ];
+
+// Legacy fictional experience entries that must be removed on migration.
+const LEGACY_EXPERIENCE_COMPANIES = ['Orbita', 'Pixelforge', 'Kvant', 'Фриланс', 'Laisvai samdomas', 'Freelance'];
 
 const SEED_LINKS = [
   {
@@ -866,6 +863,56 @@ function replaceLegacyProjects(db) {
   reconcileStack(db);
 }
 
+// Replace the fictional experience entries with the curated real ones.
+// - Drops rows whose unique stored value matches a legacy fictional employer.
+// - Ensures every curated experience row exists (guarded by company_ru so an
+//   admin edit is not clobbered once the row is present).
+// Idempotent.
+function replaceExperience(db) {
+  const legacyRu = new Set([
+    'Orbita', 'Pixelforge', 'Kvant', 'Фриланс',
+  ]);
+  const rows = db.prepare('SELECT id, company, company_ru, company_en FROM experience').all();
+  const delStmt = db.prepare('DELETE FROM experience WHERE id = ?');
+  for (const row of rows) {
+    const ru = String(row.company_ru || row.company || '').trim();
+    const en = String(row.company_en || '').trim();
+    if (legacyRu.has(ru) || LEGACY_EXPERIENCE_COMPANIES.includes(ru) || (en && LEGACY_EXPERIENCE_COMPANIES.includes(en))) {
+      delStmt.run(row.id);
+    }
+  }
+
+  const existing = new Set(
+    db.prepare('SELECT company_ru, company FROM experience').all()
+      .map((r) => String(r.company_ru || r.company || '').trim())
+  );
+  const ins = db.prepare(
+    `INSERT INTO experience
+       (period, company, description, sort_order,
+        company_ru, company_lt, company_en,
+        description_ru, description_lt, description_en)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+  );
+  SEED_EXPERIENCE.forEach((e) => {
+    const key = String(e.company.ru).trim();
+    if (existing.has(key)) return;
+    runGuarded(() =>
+      ins.run(
+        e.period, e.company.ru, e.description.ru, e.sort_order,
+        e.company.ru, e.company.lt, e.company.en,
+        e.description.ru, e.description.lt, e.description.en
+      )
+    );
+  });
+
+  // Give curated rows their stable sort_order when still unordered (0).
+  const orderStmt = db.prepare('UPDATE experience SET sort_order = ? WHERE id = ?');
+  for (const e of SEED_EXPERIENCE) {
+    const row = db.prepare('SELECT id, sort_order FROM experience WHERE company_ru = ?').get(String(e.company.ru));
+    if (row && Number(row.sort_order || 0) === 0) runGuarded(() => orderStmt.run(e.sort_order, row.id));
+  }
+}
+
 // Bring the `stack` table in line with SEED_STACK_NAMES (add missing, drop
 // removed, fix sort_order). Localized columns mirror the (identical) name.
 function reconcileStack(db) {
@@ -968,6 +1015,10 @@ function openDb(options = {}) {
   // Replace the fictional demo projects with the real portfolio projects.
   // Idempotent: removes legacy titles and (re)inserts the real ones once.
   replaceLegacyProjects(db);
+
+  // Replace the fictional experience entries (Orbita/Pixelforge/Kvant/Freelance)
+  // with the curated real ones (university / Junction / the joke entry).
+  replaceExperience(db);
 
   // Keep the curated contact email stable across re-seeds / cold starts.
   reconcileProfileEmail(db);

@@ -37,7 +37,6 @@ const PROJECTS = [
   { title: 'barlink', shot: 'barlink/desktop.png', repo: 'barlink' },
   { title: 'filmrank', shot: 'filmrank/mobile.png', repo: 'filmrank' },
   { title: 'internet-city', shot: 'internet-city/desktop.png', repo: 'internet-city' },
-  { title: 'ai-creative-studio', shot: 'ai-creative-studio/desktop.png', repo: 'ai-creative-studio' },
   { title: 'baltic-brew', shot: 'baltic_brew_preview/desktop.png', repo: 'baltic_brew_preview' },
 ];
 
