@@ -1,0 +1,29 @@
+/* ===== CSS перенесён 1:1 из original.html — внешний вид менять нельзя ===== */
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#000;font:20px/1.45 "Times New Roman",Times,serif;overflow-x:hidden}
+a{color:#0000ee}a:visited{color:#551a8b}a:hover{background:#ff0;color:#f00}
+.bar{background:#000;color:#0f0;font:14px "Courier New",monospace;padding:4px 10px;white-space:nowrap;overflow:hidden}
+h1{font:900 clamp(70px,21vw,320px)/.78 "Arial Black",Impact,sans-serif;margin:10px -2vw 0;text-transform:uppercase;letter-spacing:-.05em;white-space:nowrap;transform-origin:left;animation:wob 6s ease-in-out infinite;cursor:crosshair;transition:transform .2s}
+h1:hover{transform:scaleX(1.08) skewX(-8deg);color:#f00}h1 span{display:block}h1 span+span{-webkit-text-stroke:3px #000;color:transparent;margin-left:6vw}h1:hover span+span{color:#ff0}
+@keyframes wob{50%{transform:rotate(-1.2deg) translateX(1vw)}}
+.mq{background:#ff0;border-block:4px solid #000;overflow:hidden;white-space:nowrap;font:900 28px Arial,sans-serif;padding:6px 0;margin:20px 0}.mq div{display:inline-block;animation:mv 18s linear infinite}@keyframes mv{to{transform:translateX(-50%)}}
+.w{max-width:960px;margin:0 auto;padding:0 18px}.bl{animation:bk 1s steps(1) infinite;color:#f00;font-weight:700}@keyframes bk{50%{visibility:hidden}}
+.nav{margin:16px 0;font-size:22px}hr{border:0;border-top:4px dashed #000;margin:34px 0}
+h2{font:900 44px/1 Impact,sans-serif;background:#000;color:#fff;display:inline-block;padding:2px 12px;margin:0 0 16px;transform:rotate(-1deg)}
+.hlt{background:#ff0;padding:0 4px}.red{color:#f00;font-weight:700}.spin{display:inline-block;font:900 26px Arial;color:#fff;background:#f00;padding:2px 14px;animation:sy 3s linear infinite}@keyframes sy{to{transform:rotateY(360deg)}}
+details{border:3px solid #000;margin:0 0 12px;background:#fff}summary{font:700 26px "Courier New",monospace;padding:8px 12px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px}summary::-webkit-details-marker{display:none}summary:hover{background:#f0f;color:#fff}
+summary::after{content:"[+]"}details[open] summary::after{content:"[-]"}details[open] summary{background:#000;color:#0f0}details[open] .c{animation:sh .35s}@keyframes sh{25%{transform:translate(-8px,2px)}50%{transform:translate(8px,-2px)}75%{transform:translate(-4px,0)}}
+.c{padding:10px 16px 16px;border-top:3px solid #000}.c ul{margin:8px 0 8px 24px}.ph{border:2px dashed #888;color:#888;padding:20px;text-align:center;font:14px "Courier New",monospace;margin:8px 0}.pj-img{display:block;width:100%;height:auto;max-width:640px;border:2px solid #000;background:#fff;margin:8px 0;image-rendering:auto}.pj-repo{margin:6px 0 4px}.pj-repo a{font:14px "Courier New",monospace;color:#00f}
+.sk{columns:3 180px;font-size:22px}.sk li{margin-bottom:4px}.sk li:hover{background:#0f0;font-weight:700;transform:translateX(10px)}
+table{border-collapse:collapse;width:100%}td,th{border:2px solid #000;padding:8px 10px;vertical-align:top;text-align:left}th{background:#ff0}tr:hover td{background:#eee}
+.cnt{display:inline-block;background:#000;color:#f00;font:900 34px "Courier New",monospace;letter-spacing:6px;padding:2px 14px;border:4px inset #888}
+.big{display:block;font:900 clamp(30px,9vw,120px)/1 "Times New Roman",serif;word-break:break-all;margin:20px 0}
+.fol{position:fixed;pointer-events:none;font:700 16px "Courier New",monospace;color:#f00;z-index:50;white-space:nowrap}
+#pop{position:fixed;right:max(10px,3vw);bottom:calc(14px + env(safe-area-inset-bottom,0px));width:min(320px,calc(100% - 20px));background:#c0c0c0;border:3px outset #fff;z-index:60;font:16px Arial,sans-serif;box-shadow:6px 6px 0 #0008;animation:pu .5s cubic-bezier(.3,1.8,.5,1) 1.5s both}
+@keyframes pu{from{transform:translateY(160%) rotate(10deg)}}#pop .t{background:#00007b;color:#fff;font-weight:700;padding:2px 6px}#pop .b{padding:12px;position:relative;min-height:120px}
+#pop button{font:inherit;padding:4px 14px;border:3px outset #fff;background:#c0c0c0;cursor:pointer}#no{position:absolute;right:12px;bottom:12px;transition:transform .15s}
+.st{display:inline-block;transform:rotate(-8deg);border:3px solid #f00;color:#f00;padding:0 10px;font:900 18px Arial}
+/* Language switcher — same Web 1.0 link styling, active language underlined+bold */
+.lang{white-space:nowrap}.lang .on{font-weight:900;text-decoration:underline;color:#f00;background:#ff0;padding:0 3px;cursor:default}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

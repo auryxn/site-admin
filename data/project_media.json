@@ -1,0 +1,34 @@
+{
+  "site-admin": {
+    "image_url": "/uploads/img-1792166303295-cc828524.png",
+    "repo_url": "https://github.com/auryxn/site-admin"
+  },
+  "velora-cafe": {
+    "image_url": "/uploads/img-1792166303343-0ac47a8b.png",
+    "repo_url": "https://github.com/auryxn/velora-cafe"
+  },
+  "kavine-koralai": {
+    "image_url": "/uploads/img-1792166303378-dc844968.png",
+    "repo_url": "https://github.com/auryxn/kavine-koralai"
+  },
+  "barlink": {
+    "image_url": "/uploads/img-1792166303393-e80a04b8.png",
+    "repo_url": "https://github.com/auryxn/barlink"
+  },
+  "filmrank": {
+    "image_url": "/uploads/img-1792166303410-e61ff381.png",
+    "repo_url": "https://github.com/auryxn/filmrank"
+  },
+  "internet-city": {
+    "image_url": "/uploads/img-1792166303449-f8b37953.png",
+    "repo_url": "https://github.com/auryxn/internet-city"
+  },
+  "ai-creative-studio": {
+    "image_url": "/uploads/img-1792166303456-f0c301d3.png",
+    "repo_url": "https://github.com/auryxn/ai-creative-studio"
+  },
+  "baltic-brew": {
+    "image_url": "/uploads/img-1792166303501-fe81ff39.png",
+    "repo_url": "https://github.com/auryxn/baltic_brew-preview"
+  }
+}

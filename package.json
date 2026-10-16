@@ -1,0 +1,21 @@
+{
+  "name": "site-admin",
+  "private": true,
+  "version": "0.1.0",
+  "description": "алексей волков — Web 1.0 portfolio site (React/Vite) + Node backend with SQLite + admin panel",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --host 0.0.0.0",
+    "preview": "vite preview --host 0.0.0.0",
+    "db:seed": "node server/db.js --seed",
+    "dev:server": "node server/index.js",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  }
+}

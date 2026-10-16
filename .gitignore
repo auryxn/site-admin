@@ -1,0 +1,22 @@
+# deps
+node_modules/
+
+# build output
+dist/
+dist-pages/
+
+# local SQLite database (never commit)
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# uploads: keep project screenshots (PNG) so the static Pages build has images,
+# ignore generator noise / temp files.
+uploads/*.tmp
+uploads/.DS_Store
+
+# OS / editor
+.DS_Store
+*.log
+.env
+.env.*
