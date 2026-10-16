@@ -3,7 +3,7 @@
 Личный сайт-портфолио в стиле Web 1.0: React/Vite фронтенд + Node (встроенные
 модули) бэкенд с SQLite и админкой. Мультиязычность RU / LT / EN.
 
-- **Живой сайт (GitHub Pages):** https://auryxn.github.io/site-admin/
+- **Живой сайт:** https://auryxn.codes
 - **Репозиторий:** https://github.com/auryxn/site-admin
 
 ## Локальный запуск (полный режим: API + админка)
@@ -26,26 +26,26 @@ npm run dev            # при запущенном `npm start` в другом
 
 ## Деплой на GitHub Pages (статика без бэкенда)
 
-На Pages нет Node-процесса, поэтому сайт собирается в **статическом режиме**:
+Legacy-режим статической сборки (на случай fallback-хостинга). Канонический
+прод — https://auryxn.codes (Render). На статике нет Node-процесса, поэтому сайт
+собирается в **статическом режиме**:
 
 1. `scripts/build-static-data.mjs` снимает снимок контента всех трёх языков
    через `GET /api/site?lang=...` и сохраняет его в `public/site-data.json`.
 2. Фронтенд при `VITE_STATIC=1` читает этот JSON вместо `/api/site`
    (переключение — переменная окружения, локальный режим не затрагивается).
-3. Сборка идёт с `base: /site-admin/`, картинки проектов копируются в `uploads/`.
+3. Сборка идёт с корневым `base: /`, картинки проектов копируются в `uploads/`.
 
-Один шаг (нужен запущенный локально API на :4200 и `gh` с правами на репо):
+Один шаг (нужен запущенный локально API и `gh` с правами на репо):
 
 ```bash
 ./scripts/deploy-pages.sh
 ```
 
-Сборка публикуется в ветку `gh-pages`, Pages настроен на неё (`/`).
-
 ### Ручная сборка статики
 
 ```bash
-PAGES_BASE=/site-admin/ VITE_STATIC=1 npx vite build --outDir dist-pages
+VITE_STATIC=1 npx vite build --outDir dist-pages
 cp uploads/*.png dist-pages/uploads/ && touch dist-pages/.nojekyll
 ```
 
@@ -61,7 +61,7 @@ cp uploads/*.png dist-pages/uploads/ && touch dist-pages/.nojekyll
 | `UPLOADS_DIR`    | папка загруженных картинок (по умолчанию `<repo>/uploads`)              |
 | `DIST_DIR`       | папка собранного фронтенда (по умолчанию `<repo>/dist`)                 |
 | `VITE_STATIC`    | `1` — читать статический `site-data.json` (Pages)                       |
-| `PAGES_BASE`     | base path сборки, напр. `/site-admin/`                                  |
+| `PAGES_BASE`     | base path сборки (по умолчанию `/`; legacy Pages использовал `/site-admin/`) |
 
 При первом старте БД создаётся автоматически и засеивается (8 реальных
 проектов, RU/LT/EN) — идемпотентно, повторные старты данные не перетирают.
@@ -76,8 +76,10 @@ cp uploads/*.png dist-pages/uploads/ && touch dist-pages/.nojekyll
    - `ADMIN_PASSWORD` — пароль от `/admin` (обязательно);
    - `SESSION_SECRET` — сгенерируется автоматически (`generateValue: true`).
 4. Нажмите **Apply** / **Deploy** и дождитесь сборки (`npm ci && npm run build`).
-5. Готово: сайт → `https://<service>.onrender.com`, админка →
-   `https://<service>.onrender.com/admin` (логин `admin`, пароль — ваш `ADMIN_PASSWORD`).
+5. Готово: сайт → `https://auryxn.codes`, админка →
+   `https://auryxn.codes/admin` (логин `admin`, пароль — ваш `ADMIN_PASSWORD`).
+6. Кастомный домен: Render Dashboard → **Settings → Custom Domains** → добавьте
+   `auryxn.codes` и пропишите у регистратора CNAME/ALIAS на `<service>.onrender.com`.
 
 ### Оговорки free-tier
 

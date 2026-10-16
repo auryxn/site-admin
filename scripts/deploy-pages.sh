@@ -2,13 +2,16 @@
 # scripts/deploy-pages.sh — build the static site and publish it to the
 # `gh-pages` branch of github.com/auryxn/site-admin.
 #
+# LEGACY fallback hosting. The canonical production site is https://auryxn.codes
+# (Render). Use this only for a static, backend-less mirror.
+#
 # Usage:  ./scripts/deploy-pages.sh [repo]
 # Requires: clean working tree, `gh` authenticated, local API running on :4200
 #           (only if you want to refresh site-data.json first).
 set -euo pipefail
 
 REPO="${1:-auryxn/site-admin}"
-BASE="/site-admin/"
+BASE="${PAGES_BASE:-/}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 
@@ -46,5 +49,9 @@ gh api "repos/${REPO}/pages" -X POST \
   || echo "(Pages build type set, or already enabled)"
 
 echo
-echo "URL: https://auryxn.github.io/site-admin/"
+if [ "$BASE" = "/" ]; then
+  echo "Canonical site: https://auryxn.codes"
+else
+  echo "Legacy Pages URL: https://auryxn.github.io${BASE%/}/"
+fi
 echo "Note: first publish can take 1-3 minutes."

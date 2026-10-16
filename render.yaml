@@ -8,6 +8,8 @@
 #   → Render reads this file → set the secret env vars (ADMIN_PASSWORD,
 #   SESSION_SECRET) → Deploy. The service lands at https://<name>.onrender.com
 #   and the admin panel is at /admin (login: ADMIN_USER / ADMIN_PASSWORD).
+#   The canonical public URL is https://auryxn.codes (custom domain attached
+#   in the Render dashboard → Settings → Custom Domains).
 #
 # FREE-TIER NOTE
 #   Persistent disks are a PAID Render feature. This blueprint therefore does

@@ -7,8 +7,8 @@ import { resolve } from 'node:path';
 //
 // Deployment modes:
 //   - local (`npm start` + `npm run dev`): BASE='/', admin included, live API.
-//   - GitHub Pages (`PAGES_BASE=/site-admin/ VITE_STATIC=1 npm run build`):
-//     base path prefix, static data snapshot, admin excluded from the build.
+//   - GitHub Pages legacy (PAGES_BASE=/ VITE_STATIC=1 npm run build):
+//     root base, static data snapshot, admin excluded from the build.
 const PAGES = process.env.PAGES_BASE || '/';
 const STATIC = process.env.VITE_STATIC === '1';
 
