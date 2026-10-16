@@ -10,10 +10,17 @@ dist-pages/
 *.sqlite-shm
 *.sqlite-wal
 
-# uploads: keep project screenshots (PNG) so the static Pages build has images,
-# ignore generator noise / temp files.
+# uploads: keep project screenshots (PNG) so the static build and the repo
+# carry images on Render (ephemeral FS) and GitHub Pages.
+# `uploads/*.png`      → local admin uploads, committed.
+# `public/uploads/*.png` → Vite copies public/ into dist/, so these ship in the
+#                          build; they must NOT be ignored.
+# Only generator noise / temp files stay ignored.
 uploads/*.tmp
 uploads/.DS_Store
+!public/uploads/
+!public/uploads/*.png
+!uploads/*.png
 
 # OS / editor
 .DS_Store

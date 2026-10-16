@@ -81,7 +81,7 @@ function sendFile(req, res, absPath) {
     const isHtml = ext === '.html';
     // Hashed /assets/ + /uploads/ can be cached hard; HTML (and everything else)
     // must be revalidated so an admin edit or a fresh build is picked up.
-    const cacheControl = absPath.includes(STATIC_PREFIXES[0])
+    const cacheControl = STATIC_PREFIXES.some((p) => absPath.includes(p))
       ? 'public, max-age=31536000, immutable'
       : isHtml
         ? 'no-cache, no-store, must-revalidate'
@@ -447,6 +447,21 @@ const server = http.createServer(async (req, res) => {
 
     if (parts[0] === 'uploads') {
       const rel = parts.slice(1).join('/');
+      // Priority: the built-in static bundle (dist/uploads, produced by Vite from
+      // public/uploads and committed to the repo) wins — this is what makes the
+      // shipped project screenshots available on Render and GitHub Pages, whose
+      // filesystem (and UPLOADS_DIR under /tmp) is ephemeral.
+      // Fallback: UPLOADS_DIR — freshly uploaded images via the admin panel,
+      // which persist locally (or on a paid Render disk) but are not in the build.
+      const distAbs = path.join(DIST_DIR, 'uploads', rel);
+      const distRoot = path.join(DIST_DIR, 'uploads');
+      if (
+        distAbs.startsWith(distRoot + path.sep) &&
+        fs.existsSync(distAbs) &&
+        fs.statSync(distAbs).isFile()
+      ) {
+        return sendFile(req, res, distAbs);
+      }
       const abs = path.join(UPLOADS_DIR, rel);
       if (!abs.startsWith(UPLOADS_DIR + path.sep)) return json(res, 403, { error: 'Forbidden' });
       if (fs.existsSync(abs) && fs.statSync(abs).isFile()) return sendFile(req, res, abs);
