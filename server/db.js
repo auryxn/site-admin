@@ -145,7 +145,7 @@ const SEED_PROFILE = {
     lt: 'Aliaksei Ioda',
     en: 'Aliaksei Ioda',
   },
-  email: 'hello@alexvolkov.dev',
+  email: 'aliaksei.ioda@gmail.com',
   title: {
     ru: 'Студент',
     lt: 'Studentas',
@@ -187,31 +187,48 @@ const SEED_PROJECTS = [
     },
   },
   {
-    title: { ru: 'velora-cafe', lt: 'velora-cafe', en: 'velora-cafe' },
+    repo_url: 'https://github.com/auryxn/shiftbot',
+    title: { ru: 'shiftbot', lt: 'shiftbot', en: 'shiftbot' },
     description: {
-      ru: 'Сайт кофейни Velora Café с редактируемой админкой.',
-      lt: 'Kavos namų Velora Café svetainė su redaguojamu skydeliu.',
-      en: 'Velora Café coffee shop site with an editable admin panel.',
+      ru: 'Telegram-бот для краткосрочных подработок: админ публикует смены, работники записываются в пару кликов. Асинхронный бэкенд на aiogram 3 и PostgreSQL со статусами работ, планировщиком напоминаний и защитой от гонок при записи.',
+      lt: '„Telegram“ botas trumpalaikėms uždarbystėms: administratorius skelbia pamainas, darbuotojai užsiregistruoja keliais paspaudimais. Asinchroninis backend su aiogram 3 ir PostgreSQL: darbų būsenos, priminimų planuotojas ir apsauga nuo lenktynių registruojantis.',
+      en: 'A Telegram bot for short-term gig work: an admin posts shifts and workers sign up in a couple of taps. Asynchronous backend on aiogram 3 and PostgreSQL with job statuses, a reminder scheduler and race-safe sign-up.',
     },
-    stack: { ru: 'React, Vite, Tailwind, Node.js, SQLite', lt: 'React, Vite, Tailwind, Node.js, SQLite', en: 'React, Vite, Tailwind, Node.js, SQLite' },
+    stack: { ru: 'Python 3.12, aiogram 3.x, PostgreSQL, SQLAlchemy 2.x, Alembic, Docker', lt: 'Python 3.12, aiogram 3.x, PostgreSQL, SQLAlchemy 2.x, Alembic, Docker', en: 'Python 3.12, aiogram 3.x, PostgreSQL, SQLAlchemy 2.x, Alembic, Docker' },
     bullets: {
-      ru: ['Меню, отзывы, галерея и бронирования', 'Админка с редактированием всего контента и цен', 'Заявки на бронирование со статусами', 'Аутентификация по HMAC-токену'],
-      lt: ['Meniu, atsiliepimai, galerija ir rezervacijos', 'Skydelis visam turiniui ir kainoms redaguoti', 'Rezervacijų užklausos su būsenomis', 'Autentifikacija HMAC prieigos raktu'],
-      en: ['Menu, reviews, gallery and reservations', 'Admin panel editing all content and prices', 'Reservation requests with statuses', 'HMAC token authentication'],
+      ru: ['Пошаговое создание смены с превью и публикацией', 'FSM-запись на работу и раздел «Мои работы»', 'Автонапоминания за 24 и 2 часа, автозакрытие смен', 'Запись под блокировкой строки (FOR UPDATE) без гонок'],
+      lt: ['Žingsnis po žingsnio pamainos kūrimas su peržiūra ir publikavimu', 'Registracija per FSM ir skyrius „Mano darbai“', 'Automatiniai priminimai prieš 24 ir 2 val., automatinis uždarymas', 'Registracija su eilutės užraktu (FOR UPDATE) be lenktynių'],
+      en: ['Step-by-step shift creation with preview and publish', 'FSM sign-up flow and a “My jobs” section', 'Auto reminders 24h and 2h ahead, auto-close of shifts', 'Row-locked sign-up (FOR UPDATE) with no races'],
     },
   },
   {
-    title: { ru: 'kavine-koralai', lt: 'kavine-koralai', en: 'kavine-koralai' },
+    repo_url: 'https://github.com/auryxn/content-factory',
+    title: { ru: 'content-factory', lt: 'content-factory', en: 'content-factory' },
     description: {
-      ru: 'Сайт литовского кафе Kavinė Koralai с админкой.',
-      lt: 'Lietuviškos kavinės „Kavinė Koralai“ svetainė su skydeliu.',
-      en: 'Website for the Lithuanian café Kavinė Koralai with an admin panel.',
+      ru: 'Локальный «контент-завод»: режет длинные видео на короткие ролики под TikTok, накладывает фоновую музыку и ведёт расписание публикаций через веб-дашборд. Монтаж на ffmpeg, управление и прогресс — в дашборде на FastAPI.',
+      lt: 'Vietinis „turinio fabrikas“: ilgus vaizdo įrašus kerpa į trumpus TikTok klipus, uždeda foninę muziką ir tvarko publikavimo tvarkaraštį per žiniatinklio skydelį. Montavimas su ffmpeg, valdymas ir eiga — FastAPI skydelyje.',
+      en: 'A local “content factory”: cuts long videos into short TikTok clips, mixes in background music and manages a publish schedule through a web dashboard. ffmpeg for the montage, FastAPI for control and progress.',
     },
-    stack: { ru: 'React, Vite, Tailwind, Node.js, SQLite', lt: 'React, Vite, Tailwind, Node.js, SQLite', en: 'React, Vite, Tailwind, Node.js, SQLite' },
+    stack: { ru: 'Python, FastAPI, Uvicorn, ffmpeg', lt: 'Python, FastAPI, Uvicorn, ffmpeg', en: 'Python, FastAPI, Uvicorn, ffmpeg' },
     bullets: {
-      ru: ['Локализованный литовский сайт кафе', 'Меню, галерея и отзывы из админки', 'Единая архитектура с velora-cafe', 'SQLite с идемпотентным сидированием'],
-      lt: ['Lokalizuota lietuviška kavinės svetainė', 'Meniu, galerija ir atsiliepimai iš skydelio', 'Bendra architektūra su velora-cafe', 'SQLite su idempotentiniu duomenų sėjimu'],
-      en: ['Localized Lithuanian café website', 'Menu, gallery and reviews from the admin panel', 'Same architecture as velora-cafe', 'SQLite with idempotent seeding'],
+      ru: ['Нарезка ровно по 120 секунд через ffmpeg', 'Наложение фоновой музыки с зацикливанием', 'Дашборд с прогрессом монтажа в реальном времени', 'Автогенерация расписания выкладки по частям'],
+      lt: ['Karpymas tiksliai po 120 sekundžių su ffmpeg', 'Foninės muzikos uždėjimas su kartojimu', 'Skydelis su realiojo laiko montavimo eiga', 'Automatinis publikavimo tvarkaraščio generavimas dalimis'],
+      en: ['Exact 120-second cuts via ffmpeg', 'Background-music mix with looping', 'Dashboard with real-time montage progress', 'Auto-generated per-part publish schedule'],
+    },
+  },
+  {
+    repo_url: 'https://github.com/auryxn/homework-hub',
+    title: { ru: 'homework-hub', lt: 'homework-hub', en: 'homework-hub' },
+    description: {
+      ru: 'Локальное веб-приложение для управления учебными заданиями из Microsoft Teams: сводит все дедлайны в одну доску и автоматически запускает агентов, которые решают задания. Скан Teams идёт через CDP-браузер, прогресс агента стримится в интерфейс по SSE.',
+      lt: 'Vietinė žiniatinklio programa, skirta „Microsoft Teams“ mokymosi užduotims valdyti: suveda visus terminus į vieną lentą ir automatiškai paleidžia agentus, sprendžiančius užduotis. „Teams“ nuskaitymas vyksta per CDP naršyklę, agento eiga transliuojama į sąsają per SSE.',
+      en: 'A local web app for managing Microsoft Teams assignments: it pulls every deadline onto one board and automatically runs agents that solve the tasks. Teams is scraped via a CDP browser and agent progress streams to the UI over SSE.',
+    },
+    stack: { ru: 'Node.js, JavaScript, HTML, CSS', lt: 'Node.js, JavaScript, HTML, CSS', en: 'Node.js, JavaScript, HTML, CSS' },
+    bullets: {
+      ru: ['Веб-доска заданий: группировка по дедлайну и статусу', 'Автоскан Teams через CDP раз в день', 'Запуск агента-исполнителя с живым логом по SSE', 'Ноль внешних зависимостей — только стандартная библиотека Node'],
+      lt: ['Užduočių lenta: grupavimas pagal terminą ir būseną', 'Automatinis „Teams“ nuskaitymas per CDP kartą per dieną', 'Vykdytojo agento paleidimas su gyvu žurnalu per SSE', 'Nėra išorinių priklausomybių — tik „Node“ standartinė biblioteka'],
+      en: ['Assignment board grouped by deadline and status', 'Daily automatic Teams scan via CDP', 'Runs a worker agent with a live SSE log', 'Zero external dependencies — Node standard library only'],
     },
   },
   {
@@ -286,8 +303,12 @@ const SEED_PROJECTS = [
   },
 ];
 
-// Legacy fictional projects that must be removed on migration.
-const LEGACY_PROJECT_TITLES = ['Pulse', 'Lumen', 'Fernweh', 'Quill', 'Nimbus', 'Echo'];
+// Legacy projects that must be removed on migration (fictional demos + retired
+// café sites the user asked to drop from the portfolio).
+const LEGACY_PROJECT_TITLES = [
+  'Pulse', 'Lumen', 'Fernweh', 'Quill', 'Nimbus', 'Echo',
+  'velora-cafe', 'kavine-koralai',
+];
 
 /* eslint-disable no-unused-vars */
 const _OLD_SEED_PROJECTS = [
@@ -378,11 +399,16 @@ const _OLD_SEED_PROJECTS = [
 ];
 /* eslint-enable no-unused-vars */
 
-// Stack is mostly technical names — kept identical across languages, but the
-// multilingual shape is still stored so admins can translate if desired.
+// Real tech stack used across the portfolio projects (site-admin, barlink,
+// filmrank, internet-city, ai-creative-studio, shiftbot, content-factory,
+// homework-hub) and the university work (sdc-academic-labs: Java/Spring Boot,
+// Selenium/TestNG; SQL & data processing; networking; Python data analysis).
+// Technical brand names — kept identical across languages; the multilingual
+// shape is still stored so admins can translate if desired.
 const SEED_STACK_NAMES = [
-  'TypeScript', 'React', 'Go', 'Python', 'Node.js', 'PostgreSQL',
-  'Docker', 'Kubernetes', 'GraphQL', 'Rust', 'Redis', 'AWS',
+  'HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Vite', 'Tailwind CSS',
+  'Node.js', 'Express', 'Python', 'FastAPI', 'PostgreSQL', 'SQLite', 'Docker',
+  'Git', 'Linux', 'Java', 'Spring Boot', 'C#', 'Unity', 'SQL', 'Networking',
 ].map((name, i) => ({ name: { ru: name, lt: name, en: name }, sort_order: i + 1 }));
 
 const SEED_EXPERIENCE = [
@@ -758,22 +784,46 @@ function replaceLegacyProjects(db) {
         title_ru, title_lt, title_en,
         description_ru, description_lt, description_en,
         stack_ru, stack_lt, stack_en,
-        bullets_ru, bullets_lt, bullets_en)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+        bullets_ru, bullets_lt, bullets_en,
+        image_url, repo_url)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
   );
-  SEED_PROJECTS.forEach((p, i) => {
+  // Keep the curated order: existing projects come first (by their sort_order),
+  // then any newly added real projects appended after them.
+  const maxOrder = Number(
+    db.prepare('SELECT COALESCE(MAX(sort_order), 0) AS m FROM projects').get().m || 0
+  );
+  let nextOrder = maxOrder;
+  SEED_PROJECTS.forEach((p) => {
     const tRu = String(p.title.ru).trim();
     if (existing.has(tRu)) return;
+    nextOrder += 1;
     runGuarded(() =>
       ins.run(
-        p.title.ru, p.description.ru, p.stack.ru, JSON.stringify(p.bullets.ru), i + 1,
+        p.title.ru, p.description.ru, p.stack.ru, JSON.stringify(p.bullets.ru), nextOrder,
         p.title.ru, p.title.lt, p.title.en,
         p.description.ru, p.description.lt, p.description.en,
         p.stack.ru, p.stack.lt, p.stack.en,
-        JSON.stringify(p.bullets.ru), JSON.stringify(p.bullets.lt), JSON.stringify(p.bullets.en)
+        JSON.stringify(p.bullets.ru), JSON.stringify(p.bullets.lt), JSON.stringify(p.bullets.en),
+        '', p.repo_url || ''
       )
     );
   });
+
+  // 2b) Seed the repo_url for curated projects that carry one (needed on a
+  //     fresh DB where the insert above already happened but the media map is
+  //     absent, e.g. the three new repos without screenshots). Only fills an
+  //     empty repo_url so admin edits survive.
+  const setRepo = db.prepare(
+    "UPDATE projects SET repo_url = ? WHERE id = ? AND (repo_url IS NULL OR repo_url = '')"
+  );
+  for (const row of db.prepare('SELECT id, title_ru, title FROM projects').all()) {
+    const t = String(row.title_ru || row.title || '').trim();
+    const seed = SEED_PROJECTS.find((p) => String(p.title.ru).trim() === t);
+    if (seed && seed.repo_url) {
+      runGuarded(() => setRepo.run(seed.repo_url, row.id));
+    }
+  }
   // 3) Backfill image_url / repo_url from the project media map written by the
   //    upload step (data/project_media.json). Only sets non-empty values and
   //    only when the column is still empty, so admin edits are preserved.
@@ -793,6 +843,67 @@ function replaceLegacyProjects(db) {
       const m = media[t];
       if (m) setMedia.run(String(m.image_url || ''), String(m.repo_url || ''), row.id);
     }
+  }
+
+  // 3b) Order: on a fresh DB seeded via seedTableLocalized() the projects all
+  //     land with sort_order = 0. Give every project a stable order following
+  //     SEED_PROJECTS, but only touch rows that are still unordered (0) so any
+  //     admin-defined ordering is preserved.
+  const orderStmt = db.prepare('UPDATE projects SET sort_order = ? WHERE id = ?');
+  const allProjects = db.prepare('SELECT id, title_ru, title, sort_order FROM projects').all();
+  SEED_PROJECTS.forEach((p, i) => {
+    const row = allProjects.find(
+      (r) => String(r.title_ru || r.title || '').trim() === String(p.title.ru).trim()
+    );
+    if (row && Number(row.sort_order || 0) === 0) {
+      runGuarded(() => orderStmt.run(i + 1, row.id));
+    }
+  });
+
+  // 4) Reconcile the STACK with the curated real list: drop rows that are no
+  //    longer part of the stack and add any that are missing. Tech brand names
+  //    are identical across languages. Order follows SEED_STACK_NAMES.
+  reconcileStack(db);
+}
+
+// Bring the `stack` table in line with SEED_STACK_NAMES (add missing, drop
+// removed, fix sort_order). Localized columns mirror the (identical) name.
+function reconcileStack(db) {
+  const desired = SEED_STACK_NAMES.map((s) => ({ name: s.name.ru, sort_order: s.sort_order }));
+  const desiredNames = new Set(desired.map((d) => d.name));
+
+  // Drop stack entries that are not in the curated list.
+  for (const row of db.prepare('SELECT id, name, name_ru FROM stack').all()) {
+    const n = String(row.name_ru || row.name || '').trim();
+    if (!desiredNames.has(n)) db.prepare('DELETE FROM stack WHERE id = ?').run(row.id);
+  }
+
+  const current = db.prepare('SELECT id, name, name_ru FROM stack').all();
+  const currentNames = new Set(current.map((r) => String(r.name_ru || r.name || '').trim()));
+  const ins = db.prepare(
+    `INSERT INTO stack (name, sort_order, name_ru, name_lt, name_en) VALUES (?, ?, ?, ?, ?)`
+  );
+  const upd = db.prepare(
+    `UPDATE stack SET name = ?, sort_order = ?, name_ru = ?, name_lt = ?, name_en = ? WHERE id = ?`
+  );
+  for (const d of desired) {
+    const row = current.find((r) => String(r.name_ru || r.name || '').trim() === d.name);
+    if (!row) {
+      runGuarded(() => ins.run(d.name, d.sort_order, d.name, d.name, d.name));
+    } else {
+      runGuarded(() => upd.run(d.name, d.sort_order, d.name, d.name, d.name, row.id));
+    }
+  }
+}
+
+// Keep the contact email curated (the portfolio email should stay stable across
+// re-seeds / cold starts). Only rewrites when the stored value differs.
+function reconcileProfileEmail(db) {
+  const p = db.prepare('SELECT id, email FROM profile ORDER BY id LIMIT 1').get();
+  if (!p) return;
+  const want = SEED_PROFILE.email;
+  if (String(p.email || '') !== want) {
+    db.prepare('UPDATE profile SET email = ? WHERE id = ?').run(want, p.id);
   }
 }
 
@@ -855,8 +966,11 @@ function openDb(options = {}) {
   seedAdmins(db);
 
   // Replace the fictional demo projects with the real portfolio projects.
-  // Idempotent: removes legacy titles and (re)inserts the 8 real ones once.
+  // Idempotent: removes legacy titles and (re)inserts the real ones once.
   replaceLegacyProjects(db);
+
+  // Keep the curated contact email stable across re-seeds / cold starts.
+  reconcileProfileEmail(db);
 
   // Mirror Russian into the base columns on every open (backward compat) and
   // make sure no translation slot is left empty for existing rows.
@@ -902,10 +1016,28 @@ function fillMissingTranslations(db) {
 // still hold the Russian text. Existing real (non-Russian) translations are
 // left untouched. Also refreshes settings + ui_strings for missing keys.
 function applySeedTranslations(db) {
-  function fill(table, fieldMap, seedRows, orderBy) {
+  // fieldMap: { field: 'text' | 'json' }. `matchField` (when given) is the base
+  // Russian field used to pair a DB row with its curated seed row by value;
+  // otherwise rows are matched positionally. Value-matching keeps translations
+  // correct even after rows are reordered / removed / appended.
+  function fill(table, fieldMap, seedRows, orderBy, matchField) {
     const rows = db.prepare(`SELECT * FROM ${table} ORDER BY ${orderBy}`).all();
+    const seedByKey = new Map();
+    if (matchField) {
+      for (const s of seedRows) {
+        const byLang = s[matchField];
+        const key = byLang && typeof byLang === 'object' ? String(byLang.ru ?? '') : String(s[matchField] ?? '');
+        seedByKey.set(key.trim(), s);
+      }
+    }
     rows.forEach((row, i) => {
-      const seed = seedRows[i];
+      let seed;
+      if (matchField) {
+        const key = String(row[`${matchField}_ru`] ?? row[matchField] ?? '').trim();
+        seed = seedByKey.get(key);
+      } else {
+        seed = seedRows[i];
+      }
       if (!seed) return;
       const sets = [];
       const vals = [];
@@ -965,8 +1097,8 @@ function applySeedTranslations(db) {
     }
   }
 
-  fill('projects', { title: 'text', description: 'text', stack: 'text', bullets: 'json' }, SEED_PROJECTS, 'sort_order, id');
-  fill('stack', { name: 'text' }, SEED_STACK_NAMES, 'sort_order, id');
+  fill('projects', { title: 'text', description: 'text', stack: 'text', bullets: 'json' }, SEED_PROJECTS, 'sort_order, id', 'title');
+  fill('stack', { name: 'text' }, SEED_STACK_NAMES, 'sort_order, id', 'name');
   fill('experience', { company: 'text', description: 'text' }, SEED_EXPERIENCE, 'sort_order, id');
   fill('links', { label: 'text' }, SEED_LINKS, 'sort_order, id');
 

@@ -34,8 +34,6 @@ const GITHUB = 'https://github.com/auryxn';
 // project title -> screenshot path (relative to screenshots/) + repo slug
 const PROJECTS = [
   { title: 'site-admin', shot: 'site-admin/home.png', repo: 'site-admin' },
-  { title: 'velora-cafe', shot: 'velora-cafe/home.png', repo: 'velora-cafe' },
-  { title: 'kavine-koralai', shot: 'kavine-koralai/home.png', repo: 'kavine-koralai' },
   { title: 'barlink', shot: 'barlink/desktop.png', repo: 'barlink' },
   { title: 'filmrank', shot: 'filmrank/mobile.png', repo: 'filmrank' },
   { title: 'internet-city', shot: 'internet-city/desktop.png', repo: 'internet-city' },

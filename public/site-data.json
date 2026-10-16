@@ -31,36 +31,6 @@
         "sort_order": 1
       },
       {
-        "id": 10,
-        "title": "velora-cafe",
-        "description": "Сайт кофейни Velora Café с редактируемой админкой.",
-        "stack": "React, Vite, Tailwind, Node.js, SQLite",
-        "bullets": [
-          "Меню, отзывы, галерея и бронирования",
-          "Админка с редактированием всего контента и цен",
-          "Заявки на бронирование со статусами",
-          "Аутентификация по HMAC-токену"
-        ],
-        "image_url": "/uploads/img-1792166303343-0ac47a8b.png",
-        "repo_url": "https://github.com/auryxn/velora-cafe",
-        "sort_order": 2
-      },
-      {
-        "id": 11,
-        "title": "kavine-koralai",
-        "description": "Сайт литовского кафе Kavinė Koralai с админкой.",
-        "stack": "React, Vite, Tailwind, Node.js, SQLite",
-        "bullets": [
-          "Локализованный литовский сайт кафе",
-          "Меню, галерея и отзывы из админки",
-          "Единая архитектура с velora-cafe",
-          "SQLite с идемпотентным сидированием"
-        ],
-        "image_url": "/uploads/img-1792166303378-dc844968.png",
-        "repo_url": "https://github.com/auryxn/kavine-koralai",
-        "sort_order": 3
-      },
-      {
         "id": 12,
         "title": "barlink",
         "description": "Веб-MVP знакомств в барах: карта, встречи и чат.",
@@ -134,68 +104,163 @@
         "image_url": "/uploads/img-1792166303501-fe81ff39.png",
         "repo_url": "https://github.com/auryxn/baltic_brew_preview",
         "sort_order": 8
+      },
+      {
+        "id": 17,
+        "title": "shiftbot",
+        "description": "Telegram-бот для краткосрочных подработок: админ публикует смены, работники записываются в пару кликов. Асинхронный бэкенд на aiogram 3 и PostgreSQL со статусами работ, планировщиком напоминаний и защитой от гонок при записи.",
+        "stack": "Python 3.12, aiogram 3.x, PostgreSQL, SQLAlchemy 2.x, Alembic, Docker",
+        "bullets": [
+          "Пошаговое создание смены с превью и публикацией",
+          "FSM-запись на работу и раздел «Мои работы»",
+          "Автонапоминания за 24 и 2 часа, автозакрытие смен",
+          "Запись под блокировкой строки (FOR UPDATE) без гонок"
+        ],
+        "image_url": "",
+        "repo_url": "https://github.com/auryxn/shiftbot",
+        "sort_order": 9
+      },
+      {
+        "id": 18,
+        "title": "content-factory",
+        "description": "Локальный «контент-завод»: режет длинные видео на короткие ролики под TikTok, накладывает фоновую музыку и ведёт расписание публикаций через веб-дашборд. Монтаж на ffmpeg, управление и прогресс — в дашборде на FastAPI.",
+        "stack": "Python, FastAPI, Uvicorn, ffmpeg",
+        "bullets": [
+          "Нарезка ровно по 120 секунд через ffmpeg",
+          "Наложение фоновой музыки с зацикливанием",
+          "Дашборд с прогрессом монтажа в реальном времени",
+          "Автогенерация расписания выкладки по частям"
+        ],
+        "image_url": "",
+        "repo_url": "https://github.com/auryxn/content-factory",
+        "sort_order": 10
+      },
+      {
+        "id": 19,
+        "title": "homework-hub",
+        "description": "Локальное веб-приложение для управления учебными заданиями из Microsoft Teams: сводит все дедлайны в одну доску и автоматически запускает агентов, которые решают задания. Скан Teams идёт через CDP-браузер, прогресс агента стримится в интерфейс по SSE.",
+        "stack": "Node.js, JavaScript, HTML, CSS",
+        "bullets": [
+          "Веб-доска заданий: группировка по дедлайну и статусу",
+          "Автоскан Teams через CDP раз в день",
+          "Запуск агента-исполнителя с живым логом по SSE",
+          "Ноль внешних зависимостей — только стандартная библиотека Node"
+        ],
+        "image_url": "",
+        "repo_url": "https://github.com/auryxn/homework-hub",
+        "sort_order": 11
       }
     ],
     "stack": [
       {
+        "id": 13,
+        "name": "HTML",
+        "sort_order": 1
+      },
+      {
+        "id": 14,
+        "name": "CSS",
+        "sort_order": 2
+      },
+      {
+        "id": 15,
+        "name": "JavaScript",
+        "sort_order": 3
+      },
+      {
         "id": 1,
         "name": "TypeScript",
-        "sort_order": 1
+        "sort_order": 4
       },
       {
         "id": 2,
         "name": "React",
-        "sort_order": 2
+        "sort_order": 5
       },
       {
-        "id": 3,
-        "name": "Go",
-        "sort_order": 3
+        "id": 16,
+        "name": "Vite",
+        "sort_order": 6
       },
       {
-        "id": 4,
-        "name": "Python",
-        "sort_order": 4
+        "id": 17,
+        "name": "Tailwind CSS",
+        "sort_order": 7
       },
       {
         "id": 5,
         "name": "Node.js",
-        "sort_order": 5
+        "sort_order": 8
+      },
+      {
+        "id": 18,
+        "name": "Express",
+        "sort_order": 9
+      },
+      {
+        "id": 4,
+        "name": "Python",
+        "sort_order": 10
+      },
+      {
+        "id": 19,
+        "name": "FastAPI",
+        "sort_order": 11
       },
       {
         "id": 6,
         "name": "PostgreSQL",
-        "sort_order": 6
+        "sort_order": 12
+      },
+      {
+        "id": 20,
+        "name": "SQLite",
+        "sort_order": 13
       },
       {
         "id": 7,
         "name": "Docker",
-        "sort_order": 7
+        "sort_order": 14
       },
       {
-        "id": 8,
-        "name": "Kubernetes",
-        "sort_order": 8
+        "id": 21,
+        "name": "Git",
+        "sort_order": 15
       },
       {
-        "id": 9,
-        "name": "GraphQL",
-        "sort_order": 9
+        "id": 22,
+        "name": "Linux",
+        "sort_order": 16
       },
       {
-        "id": 10,
-        "name": "Rust",
-        "sort_order": 10
+        "id": 23,
+        "name": "Java",
+        "sort_order": 17
       },
       {
-        "id": 11,
-        "name": "Redis",
-        "sort_order": 11
+        "id": 24,
+        "name": "Spring Boot",
+        "sort_order": 18
       },
       {
-        "id": 12,
-        "name": "AWS",
-        "sort_order": 12
+        "id": 25,
+        "name": "C#",
+        "sort_order": 19
+      },
+      {
+        "id": 26,
+        "name": "Unity",
+        "sort_order": 20
+      },
+      {
+        "id": 27,
+        "name": "SQL",
+        "sort_order": 21
+      },
+      {
+        "id": 28,
+        "name": "Networking",
+        "sort_order": 22
       }
     ],
     "experience": [
@@ -333,36 +398,6 @@
         "sort_order": 1
       },
       {
-        "id": 10,
-        "title": "velora-cafe",
-        "description": "Kavos namų Velora Café svetainė su redaguojamu skydeliu.",
-        "stack": "React, Vite, Tailwind, Node.js, SQLite",
-        "bullets": [
-          "Meniu, atsiliepimai, galerija ir rezervacijos",
-          "Skydelis visam turiniui ir kainoms redaguoti",
-          "Rezervacijų užklausos su būsenomis",
-          "Autentifikacija HMAC prieigos raktu"
-        ],
-        "image_url": "/uploads/img-1792166303343-0ac47a8b.png",
-        "repo_url": "https://github.com/auryxn/velora-cafe",
-        "sort_order": 2
-      },
-      {
-        "id": 11,
-        "title": "kavine-koralai",
-        "description": "Lietuviškos kavinės „Kavinė Koralai“ svetainė su skydeliu.",
-        "stack": "React, Vite, Tailwind, Node.js, SQLite",
-        "bullets": [
-          "Lokalizuota lietuviška kavinės svetainė",
-          "Meniu, galerija ir atsiliepimai iš skydelio",
-          "Bendra architektūra su velora-cafe",
-          "SQLite su idempotentiniu duomenų sėjimu"
-        ],
-        "image_url": "/uploads/img-1792166303378-dc844968.png",
-        "repo_url": "https://github.com/auryxn/kavine-koralai",
-        "sort_order": 3
-      },
-      {
         "id": 12,
         "title": "barlink",
         "description": "Pažinčių baruose žiniatinklio MVP: žemėlapis, susitikimai ir pokalbiai.",
@@ -436,68 +471,163 @@
         "image_url": "/uploads/img-1792166303501-fe81ff39.png",
         "repo_url": "https://github.com/auryxn/baltic_brew_preview",
         "sort_order": 8
+      },
+      {
+        "id": 17,
+        "title": "shiftbot",
+        "description": "„Telegram“ botas trumpalaikėms uždarbystėms: administratorius skelbia pamainas, darbuotojai užsiregistruoja keliais paspaudimais. Asinchroninis backend su aiogram 3 ir PostgreSQL: darbų būsenos, priminimų planuotojas ir apsauga nuo lenktynių registruojantis.",
+        "stack": "Python 3.12, aiogram 3.x, PostgreSQL, SQLAlchemy 2.x, Alembic, Docker",
+        "bullets": [
+          "Žingsnis po žingsnio pamainos kūrimas su peržiūra ir publikavimu",
+          "Registracija per FSM ir skyrius „Mano darbai“",
+          "Automatiniai priminimai prieš 24 ir 2 val., automatinis uždarymas",
+          "Registracija su eilutės užraktu (FOR UPDATE) be lenktynių"
+        ],
+        "image_url": "",
+        "repo_url": "https://github.com/auryxn/shiftbot",
+        "sort_order": 9
+      },
+      {
+        "id": 18,
+        "title": "content-factory",
+        "description": "Vietinis „turinio fabrikas“: ilgus vaizdo įrašus kerpa į trumpus TikTok klipus, uždeda foninę muziką ir tvarko publikavimo tvarkaraštį per žiniatinklio skydelį. Montavimas su ffmpeg, valdymas ir eiga — FastAPI skydelyje.",
+        "stack": "Python, FastAPI, Uvicorn, ffmpeg",
+        "bullets": [
+          "Karpymas tiksliai po 120 sekundžių su ffmpeg",
+          "Foninės muzikos uždėjimas su kartojimu",
+          "Skydelis su realiojo laiko montavimo eiga",
+          "Automatinis publikavimo tvarkaraščio generavimas dalimis"
+        ],
+        "image_url": "",
+        "repo_url": "https://github.com/auryxn/content-factory",
+        "sort_order": 10
+      },
+      {
+        "id": 19,
+        "title": "homework-hub",
+        "description": "Vietinė žiniatinklio programa, skirta „Microsoft Teams“ mokymosi užduotims valdyti: suveda visus terminus į vieną lentą ir automatiškai paleidžia agentus, sprendžiančius užduotis. „Teams“ nuskaitymas vyksta per CDP naršyklę, agento eiga transliuojama į sąsają per SSE.",
+        "stack": "Node.js, JavaScript, HTML, CSS",
+        "bullets": [
+          "Užduočių lenta: grupavimas pagal terminą ir būseną",
+          "Automatinis „Teams“ nuskaitymas per CDP kartą per dieną",
+          "Vykdytojo agento paleidimas su gyvu žurnalu per SSE",
+          "Nėra išorinių priklausomybių — tik „Node“ standartinė biblioteka"
+        ],
+        "image_url": "",
+        "repo_url": "https://github.com/auryxn/homework-hub",
+        "sort_order": 11
       }
     ],
     "stack": [
       {
+        "id": 13,
+        "name": "HTML",
+        "sort_order": 1
+      },
+      {
+        "id": 14,
+        "name": "CSS",
+        "sort_order": 2
+      },
+      {
+        "id": 15,
+        "name": "JavaScript",
+        "sort_order": 3
+      },
+      {
         "id": 1,
         "name": "TypeScript",
-        "sort_order": 1
+        "sort_order": 4
       },
       {
         "id": 2,
         "name": "React",
-        "sort_order": 2
+        "sort_order": 5
       },
       {
-        "id": 3,
-        "name": "Go",
-        "sort_order": 3
+        "id": 16,
+        "name": "Vite",
+        "sort_order": 6
       },
       {
-        "id": 4,
-        "name": "Python",
-        "sort_order": 4
+        "id": 17,
+        "name": "Tailwind CSS",
+        "sort_order": 7
       },
       {
         "id": 5,
         "name": "Node.js",
-        "sort_order": 5
+        "sort_order": 8
+      },
+      {
+        "id": 18,
+        "name": "Express",
+        "sort_order": 9
+      },
+      {
+        "id": 4,
+        "name": "Python",
+        "sort_order": 10
+      },
+      {
+        "id": 19,
+        "name": "FastAPI",
+        "sort_order": 11
       },
       {
         "id": 6,
         "name": "PostgreSQL",
-        "sort_order": 6
+        "sort_order": 12
+      },
+      {
+        "id": 20,
+        "name": "SQLite",
+        "sort_order": 13
       },
       {
         "id": 7,
         "name": "Docker",
-        "sort_order": 7
+        "sort_order": 14
       },
       {
-        "id": 8,
-        "name": "Kubernetes",
-        "sort_order": 8
+        "id": 21,
+        "name": "Git",
+        "sort_order": 15
       },
       {
-        "id": 9,
-        "name": "GraphQL",
-        "sort_order": 9
+        "id": 22,
+        "name": "Linux",
+        "sort_order": 16
       },
       {
-        "id": 10,
-        "name": "Rust",
-        "sort_order": 10
+        "id": 23,
+        "name": "Java",
+        "sort_order": 17
       },
       {
-        "id": 11,
-        "name": "Redis",
-        "sort_order": 11
+        "id": 24,
+        "name": "Spring Boot",
+        "sort_order": 18
       },
       {
-        "id": 12,
-        "name": "AWS",
-        "sort_order": 12
+        "id": 25,
+        "name": "C#",
+        "sort_order": 19
+      },
+      {
+        "id": 26,
+        "name": "Unity",
+        "sort_order": 20
+      },
+      {
+        "id": 27,
+        "name": "SQL",
+        "sort_order": 21
+      },
+      {
+        "id": 28,
+        "name": "Networking",
+        "sort_order": 22
       }
     ],
     "experience": [
@@ -635,36 +765,6 @@
         "sort_order": 1
       },
       {
-        "id": 10,
-        "title": "velora-cafe",
-        "description": "Velora Café coffee shop site with an editable admin panel.",
-        "stack": "React, Vite, Tailwind, Node.js, SQLite",
-        "bullets": [
-          "Menu, reviews, gallery and reservations",
-          "Admin panel editing all content and prices",
-          "Reservation requests with statuses",
-          "HMAC token authentication"
-        ],
-        "image_url": "/uploads/img-1792166303343-0ac47a8b.png",
-        "repo_url": "https://github.com/auryxn/velora-cafe",
-        "sort_order": 2
-      },
-      {
-        "id": 11,
-        "title": "kavine-koralai",
-        "description": "Website for the Lithuanian café Kavinė Koralai with an admin panel.",
-        "stack": "React, Vite, Tailwind, Node.js, SQLite",
-        "bullets": [
-          "Localized Lithuanian café website",
-          "Menu, gallery and reviews from the admin panel",
-          "Same architecture as velora-cafe",
-          "SQLite with idempotent seeding"
-        ],
-        "image_url": "/uploads/img-1792166303378-dc844968.png",
-        "repo_url": "https://github.com/auryxn/kavine-koralai",
-        "sort_order": 3
-      },
-      {
         "id": 12,
         "title": "barlink",
         "description": "A web MVP for dating in bars: map, meetups and chat.",
@@ -738,68 +838,163 @@
         "image_url": "/uploads/img-1792166303501-fe81ff39.png",
         "repo_url": "https://github.com/auryxn/baltic_brew_preview",
         "sort_order": 8
+      },
+      {
+        "id": 17,
+        "title": "shiftbot",
+        "description": "A Telegram bot for short-term gig work: an admin posts shifts and workers sign up in a couple of taps. Asynchronous backend on aiogram 3 and PostgreSQL with job statuses, a reminder scheduler and race-safe sign-up.",
+        "stack": "Python 3.12, aiogram 3.x, PostgreSQL, SQLAlchemy 2.x, Alembic, Docker",
+        "bullets": [
+          "Step-by-step shift creation with preview and publish",
+          "FSM sign-up flow and a “My jobs” section",
+          "Auto reminders 24h and 2h ahead, auto-close of shifts",
+          "Row-locked sign-up (FOR UPDATE) with no races"
+        ],
+        "image_url": "",
+        "repo_url": "https://github.com/auryxn/shiftbot",
+        "sort_order": 9
+      },
+      {
+        "id": 18,
+        "title": "content-factory",
+        "description": "A local “content factory”: cuts long videos into short TikTok clips, mixes in background music and manages a publish schedule through a web dashboard. ffmpeg for the montage, FastAPI for control and progress.",
+        "stack": "Python, FastAPI, Uvicorn, ffmpeg",
+        "bullets": [
+          "Exact 120-second cuts via ffmpeg",
+          "Background-music mix with looping",
+          "Dashboard with real-time montage progress",
+          "Auto-generated per-part publish schedule"
+        ],
+        "image_url": "",
+        "repo_url": "https://github.com/auryxn/content-factory",
+        "sort_order": 10
+      },
+      {
+        "id": 19,
+        "title": "homework-hub",
+        "description": "A local web app for managing Microsoft Teams assignments: it pulls every deadline onto one board and automatically runs agents that solve the tasks. Teams is scraped via a CDP browser and agent progress streams to the UI over SSE.",
+        "stack": "Node.js, JavaScript, HTML, CSS",
+        "bullets": [
+          "Assignment board grouped by deadline and status",
+          "Daily automatic Teams scan via CDP",
+          "Runs a worker agent with a live SSE log",
+          "Zero external dependencies — Node standard library only"
+        ],
+        "image_url": "",
+        "repo_url": "https://github.com/auryxn/homework-hub",
+        "sort_order": 11
       }
     ],
     "stack": [
       {
+        "id": 13,
+        "name": "HTML",
+        "sort_order": 1
+      },
+      {
+        "id": 14,
+        "name": "CSS",
+        "sort_order": 2
+      },
+      {
+        "id": 15,
+        "name": "JavaScript",
+        "sort_order": 3
+      },
+      {
         "id": 1,
         "name": "TypeScript",
-        "sort_order": 1
+        "sort_order": 4
       },
       {
         "id": 2,
         "name": "React",
-        "sort_order": 2
+        "sort_order": 5
       },
       {
-        "id": 3,
-        "name": "Go",
-        "sort_order": 3
+        "id": 16,
+        "name": "Vite",
+        "sort_order": 6
       },
       {
-        "id": 4,
-        "name": "Python",
-        "sort_order": 4
+        "id": 17,
+        "name": "Tailwind CSS",
+        "sort_order": 7
       },
       {
         "id": 5,
         "name": "Node.js",
-        "sort_order": 5
+        "sort_order": 8
+      },
+      {
+        "id": 18,
+        "name": "Express",
+        "sort_order": 9
+      },
+      {
+        "id": 4,
+        "name": "Python",
+        "sort_order": 10
+      },
+      {
+        "id": 19,
+        "name": "FastAPI",
+        "sort_order": 11
       },
       {
         "id": 6,
         "name": "PostgreSQL",
-        "sort_order": 6
+        "sort_order": 12
+      },
+      {
+        "id": 20,
+        "name": "SQLite",
+        "sort_order": 13
       },
       {
         "id": 7,
         "name": "Docker",
-        "sort_order": 7
+        "sort_order": 14
       },
       {
-        "id": 8,
-        "name": "Kubernetes",
-        "sort_order": 8
+        "id": 21,
+        "name": "Git",
+        "sort_order": 15
       },
       {
-        "id": 9,
-        "name": "GraphQL",
-        "sort_order": 9
+        "id": 22,
+        "name": "Linux",
+        "sort_order": 16
       },
       {
-        "id": 10,
-        "name": "Rust",
-        "sort_order": 10
+        "id": 23,
+        "name": "Java",
+        "sort_order": 17
       },
       {
-        "id": 11,
-        "name": "Redis",
-        "sort_order": 11
+        "id": 24,
+        "name": "Spring Boot",
+        "sort_order": 18
       },
       {
-        "id": 12,
-        "name": "AWS",
-        "sort_order": 12
+        "id": 25,
+        "name": "C#",
+        "sort_order": 19
+      },
+      {
+        "id": 26,
+        "name": "Unity",
+        "sort_order": 20
+      },
+      {
+        "id": 27,
+        "name": "SQL",
+        "sort_order": 21
+      },
+      {
+        "id": 28,
+        "name": "Networking",
+        "sort_order": 22
       }
     ],
     "experience": [
