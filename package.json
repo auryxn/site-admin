@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.1.0",
   "description": "алексей волков — Web 1.0 portfolio site (React/Vite) + Node backend with SQLite + admin panel",
+  "engines": {
+    "node": ">=22.13.0"
+  },
   "scripts": {
     "build": "vite build",
     "dev": "vite --host 0.0.0.0",

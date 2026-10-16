@@ -23,8 +23,23 @@ const PORT = Number(process.env.PORT) || 4200;
 const HOST = process.env.HOST || '0.0.0.0';
 
 const ROOT = path.join(__dirname, '..');
-const DIST_DIR = path.join(ROOT, 'dist');
-const UPLOADS_DIR = path.join(ROOT, 'uploads');
+const DIST_DIR = process.env.DIST_DIR
+  ? path.resolve(String(process.env.DIST_DIR))
+  : path.join(ROOT, 'dist');
+// Uploads are user-generated (admin image uploads) and must persist across
+// restarts in production → point at the persistent disk via UPLOADS_DIR.
+// Default (local, untouched): <repo>/uploads.
+function resolveUploadsDir() {
+  if (process.env.UPLOADS_DIR && String(process.env.UPLOADS_DIR).trim()) {
+    return path.resolve(String(process.env.UPLOADS_DIR).trim());
+  }
+  if (process.env.RENDER) {
+    // Ephemeral free-tier default: keep uploads off the read-only-ish checkout.
+    return path.join('/tmp', 'site-data', 'uploads');
+  }
+  return path.join(ROOT, 'uploads');
+}
+const UPLOADS_DIR = resolveUploadsDir();
 
 const API_PREFIX = '/api';
 const STATIC_PREFIXES = ['/assets/', '/uploads/'];
@@ -225,6 +240,8 @@ function pickField(row, field, lang) {
 // ---------------------------------------------------------------------------
 const db = openDb();
 console.log(`[site] SQLite ready at ${require('./db').DB_PATH}`);
+console.log(`[site] uploads dir → ${UPLOADS_DIR}`);
+console.log(`[site] dist dir    → ${DIST_DIR}`);
 
 const profileGetStmt = db.prepare('SELECT * FROM profile ORDER BY id ASC LIMIT 1');
 
@@ -473,7 +490,18 @@ async function handleApi(req, res, method, parts, pathname, parsed) {
   const p = parts.slice(1); // strip 'api'
 
   if (p[0] === 'health') {
-    return json(res, 200, { status: 'ok', time: new Date().toISOString() });
+    let projects = 0;
+    try {
+      projects = Number(projectListStmt.all().length);
+    } catch {
+      projects = 0;
+    }
+    return json(res, 200, {
+      status: 'ok',
+      time: new Date().toISOString(),
+      db: require('./db').DB_PATH,
+      projects,
+    });
   }
 
   // ---- auth ----

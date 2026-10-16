@@ -24,7 +24,28 @@ const path = require('node:path');
 const fs = require('node:fs');
 const crypto = require('node:crypto');
 
-const DB_PATH = path.join(__dirname, '..', 'site.sqlite');
+const ROOT = path.join(__dirname, '..');
+
+// Database location is configurable so it can live on a persistent disk (Render
+// `disk`, Fly volume, …) or on a throwaway path for ephemeral demo deploys.
+//   - DB_PATH=...          → explicit absolute/relative path (wins)
+//   - RENDER + no DB_PATH  → /tmp (ephemeral; re-seeded on every cold start)
+//   - otherwise            → <repo>/site.sqlite (local default, untouched)
+function resolveDbPath() {
+  if (process.env.DB_PATH && String(process.env.DB_PATH).trim()) {
+    return path.resolve(String(process.env.DB_PATH).trim());
+  }
+  if (process.env.RENDER) {
+    // Free tier without a disk: keep the DB off the (ephemeral) repo checkout.
+    return path.join('/tmp', 'site-data', 'site.sqlite');
+  }
+  return path.join(ROOT, 'site.sqlite');
+}
+
+const DB_PATH = resolveDbPath();
+
+// Make sure the directory exists so SQLite can create the file there.
+fs.mkdirSync(path.dirname(DB_PATH), { recursive: true });
 
 const LANGS = ['ru', 'lt', 'en'];
 const DEFAULT_LANG = 'ru';
@@ -640,15 +661,47 @@ function seedTableLocalized(db, table, rows, fieldMap, extraColumns = []) {
   return true;
 }
 
+// Admin credentials come from env in production:
+//   ADMIN_USER     (default 'admin')
+//   ADMIN_PASSWORD (default 'admin123')
+// When ADMIN_PASSWORD is set we also rotate the password of an already-seeded
+// admin, so a stale DB (or a fresh /tmp DB between cold starts) still honours
+// the secret configured on the host. Idempotent and safe.
+function adminUser() {
+  return String(process.env.ADMIN_USER || 'admin');
+}
+
+function adminPassword() {
+  return String(process.env.ADMIN_PASSWORD || 'admin123');
+}
+
 function seedAdmins(db) {
-  if (count(db, 'admins') > 0) return;
-  const salt = makeSalt();
-  const hash = hashPassword('admin123', salt);
-  db.prepare('INSERT INTO admins (username, password_hash, salt) VALUES (?, ?, ?)').run(
-    'admin',
-    hash,
-    salt
-  );
+  const username = adminUser();
+  const existing = db.prepare('SELECT * FROM admins WHERE username = ?').get(username);
+  const envPassword = process.env.ADMIN_PASSWORD;
+
+  if (!existing) {
+    const salt = makeSalt();
+    const hash = hashPassword(adminPassword(), salt);
+    db.prepare('INSERT INTO admins (username, password_hash, salt) VALUES (?, ?, ?)').run(
+      username,
+      hash,
+      salt
+    );
+    return;
+  }
+
+  // Verify the stored password against the configured one; rotate if it drifted
+  // (e.g. an old DB seeded with the default, or the secret changed on the host).
+  if (envPassword && !verifyPassword(envPassword, existing.salt, existing.password_hash)) {
+    const salt = makeSalt();
+    const hash = hashPassword(envPassword, salt);
+    db.prepare('UPDATE admins SET password_hash = ?, salt = ? WHERE id = ?').run(
+      hash,
+      salt,
+      existing.id
+    );
+  }
 }
 
 // settings: rows keyed `s:<key>:<lang>`
@@ -744,7 +797,9 @@ function replaceLegacyProjects(db) {
 }
 
 function openDb(options = {}) {
-  const db = new DatabaseSync(DB_PATH);
+  const dbPath = options.dbPath ? path.resolve(String(options.dbPath)) : DB_PATH;
+  fs.mkdirSync(path.dirname(dbPath), { recursive: true });
+  const db = new DatabaseSync(dbPath);
   db.exec('PRAGMA journal_mode = WAL;');
 
   migrate(db);
@@ -764,7 +819,7 @@ function openDb(options = {}) {
          years, years_ru, years_lt, years_en,
          bio_text, bio_text_ru, bio_text_lt, bio_text_en,
          status, status_ru, status_lt, status_en)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
     ).run(
       SEED_PROFILE.name.ru,
       SEED_PROFILE.name.ru,

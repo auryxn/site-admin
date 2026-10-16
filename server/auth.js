@@ -1,6 +1,7 @@
 /*
  * server/auth.js — tiny HMAC token issuer/verifier (no deps).
- * Secret is read from env SITE_SECRET or a stable default.
+ * Secret is read from env SESSION_SECRET (preferred) or SITE_SECRET, with a
+ * stable dev default so local runs keep working without configuration.
  */
 'use strict';
 
@@ -8,6 +9,7 @@ const crypto = require('node:crypto');
 
 function getSecret() {
   return (
+    process.env.SESSION_SECRET ||
     process.env.SITE_SECRET ||
     'site-admin-dev-secret-change-me-in-production-9c41a7e0d3b6'
   );
