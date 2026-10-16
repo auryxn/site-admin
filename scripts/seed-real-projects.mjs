@@ -40,7 +40,7 @@ const PROJECTS = [
   { title: 'filmrank', shot: 'filmrank/mobile.png', repo: 'filmrank' },
   { title: 'internet-city', shot: 'internet-city/desktop.png', repo: 'internet-city' },
   { title: 'ai-creative-studio', shot: 'ai-creative-studio/desktop.png', repo: 'ai-creative-studio' },
-  { title: 'baltic-brew', shot: 'baltic_brew_preview/desktop.png', repo: 'baltic_brew-preview' },
+  { title: 'baltic-brew', shot: 'baltic_brew_preview/desktop.png', repo: 'baltic_brew_preview' },
 ];
 
 async function login() {
