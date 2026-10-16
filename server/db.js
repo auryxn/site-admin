@@ -533,7 +533,7 @@ const LEGACY_LINK_LABELS = [
 
 // settings.value becomes '<key>_<lang>' rows: s:<key>:ru / s:<key>:lt / s:<key>:en
 const SEED_SETTINGS = {
-  counter_start: { ru: '137', lt: '137', en: '137' },
+  counter_start: { ru: '13506', lt: '13506', en: '13506' },
   title_bar: {
     ru: 'C:\\Users\\alex\\Desktop\\portfolio\\index_final_v3_REAL_FINAL.html — Netscape Navigator 4.0',
     lt: 'C:\\Users\\alex\\Desktop\\portfolio\\index_final_v3_REAL_FINAL.html — Netscape Navigator 4.0',
@@ -787,6 +787,19 @@ function seedSettings(db) {
     for (const lang of LANGS) {
       runGuarded(() => ins.run(`s:${key}:${lang}`, String(byLang[lang] ?? byLang.ru ?? '')));
     }
+  }
+}
+
+// Force the curated visitor-counter value across all langs on every open.
+// Needed because seedSettings() is INSERT OR IGNORE and would keep an old 137.
+function reconcileCounterStart(db) {
+  const want = String(SEED_SETTINGS.counter_start?.ru ?? '');
+  if (!want) return;
+  const upd = db.prepare(
+    'INSERT INTO settings (key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value'
+  );
+  for (const lang of LANGS) {
+    runGuarded(() => upd.run(`s:counter_start:${lang}`, want));
   }
 }
 
@@ -1124,6 +1137,10 @@ function openDb(options = {}) {
   seedSettings(db);
   ensureUiStringKeys(db);
   seedAdmins(db);
+
+  // Keep the visitor counter's curated start value fresh (settings are INSERT OR
+  // IGNORE, so an older DB would keep 137). Idempotent.
+  reconcileCounterStart(db);
 
   // Replace the fictional demo projects with the real portfolio projects.
   // Idempotent: removes legacy titles and (re)inserts the real ones once.
