@@ -1,0 +1,908 @@
+{
+  "ru": {
+    "lang": "ru",
+    "langs": [
+      "ru",
+      "lt",
+      "en"
+    ],
+    "profile": {
+      "name": "Алексей Иода",
+      "title": "Студент",
+      "years": "0 лет",
+      "bio_text": "Этот сайт <span class=\"red\">намеренно</span> выглядит так, потому что я умею делать красиво, но решил, что вам будет скучно.",
+      "status": "ИЩУ РАБОТУ",
+      "email": "aliaksei.ioda@gmail.com"
+    },
+    "projects": [
+      {
+        "id": 9,
+        "title": "site-admin",
+        "description": "Личный сайт-портфолио в стиле Web 1.0 с админкой.",
+        "stack": "React, Vite, Node.js, SQLite",
+        "bullets": [
+          "Публичный сайт и админка в одном Node-процессе",
+          "Контент редактируется без программиста",
+          "Мультиязычность RU / LT / EN",
+          "Загрузка изображений в uploads/"
+        ],
+        "image_url": "/uploads/img-1792166303295-cc828524.png",
+        "repo_url": "https://github.com/auryxn/site-admin",
+        "sort_order": 1
+      },
+      {
+        "id": 10,
+        "title": "velora-cafe",
+        "description": "Сайт кофейни Velora Café с редактируемой админкой.",
+        "stack": "React, Vite, Tailwind, Node.js, SQLite",
+        "bullets": [
+          "Меню, отзывы, галерея и бронирования",
+          "Админка с редактированием всего контента и цен",
+          "Заявки на бронирование со статусами",
+          "Аутентификация по HMAC-токену"
+        ],
+        "image_url": "/uploads/img-1792166303343-0ac47a8b.png",
+        "repo_url": "https://github.com/auryxn/velora-cafe",
+        "sort_order": 2
+      },
+      {
+        "id": 11,
+        "title": "kavine-koralai",
+        "description": "Сайт литовского кафе Kavinė Koralai с админкой.",
+        "stack": "React, Vite, Tailwind, Node.js, SQLite",
+        "bullets": [
+          "Локализованный литовский сайт кафе",
+          "Меню, галерея и отзывы из админки",
+          "Единая архитектура с velora-cafe",
+          "SQLite с идемпотентным сидированием"
+        ],
+        "image_url": "/uploads/img-1792166303378-dc844968.png",
+        "repo_url": "https://github.com/auryxn/kavine-koralai",
+        "sort_order": 3
+      },
+      {
+        "id": 12,
+        "title": "barlink",
+        "description": "Веб-MVP знакомств в барах: карта, встречи и чат.",
+        "stack": "React, Vite, Tailwind, Leaflet, Express, SQLite",
+        "bullets": [
+          "Интерактивная карта баров Вильнюса",
+          "Создание и присоединение к встречам",
+          "Групповой чат и список участников",
+          "Демо-интерфейс в рамке телефона"
+        ],
+        "image_url": "/uploads/img-1792166303393-e80a04b8.png",
+        "repo_url": "https://github.com/auryxn/barlink",
+        "sort_order": 4
+      },
+      {
+        "id": 13,
+        "title": "filmrank",
+        "description": "Личный рейтинг фильмов: свайпы в стиле Tinder и дуэли.",
+        "stack": "React 19, Vite, framer-motion, TMDB API",
+        "bullets": [
+          "Свайп-колода карточек из каталога TMDB",
+          "Дуэли: какой фильм лучше",
+          "Рейтинг и tier-список S–F",
+          "Статистика вкуса и экспорт топа"
+        ],
+        "image_url": "/uploads/img-1792166303410-e61ff381.png",
+        "repo_url": "https://github.com/auryxn/filmrank",
+        "sort_order": 5
+      },
+      {
+        "id": 14,
+        "title": "internet-city",
+        "description": "Интерактивная 3D-модель того, как работает интернет.",
+        "stack": "TypeScript, Vite, Three.js, WebGL",
+        "bullets": [
+          "3D-сцена: сервисы-здания и пакеты-грузовики",
+          "10 шагов от URL до отрисовки страницы",
+          "Режимы «Просто» и «Технически»",
+          "Симуляция потери пакета и квиз"
+        ],
+        "image_url": "/uploads/img-1792166303449-f8b37953.png",
+        "repo_url": "https://github.com/auryxn/internet-city",
+        "sort_order": 6
+      },
+      {
+        "id": 15,
+        "title": "ai-creative-studio",
+        "description": "Next.js MVP — рабочее место для AI-производства видео.",
+        "stack": "Next.js 15, React 19, TypeScript, Tailwind",
+        "bullets": [
+          "Дашборд с прогрессом производства фильмов",
+          "Сценарий, раскадровка и персонажи",
+          "Конструктор промптов с версионированием",
+          "Хранение локально, с переходом на Supabase"
+        ],
+        "image_url": "/uploads/img-1792166303456-f0c301d3.png",
+        "repo_url": "https://github.com/auryxn/ai-creative-studio",
+        "sort_order": 7
+      },
+      {
+        "id": 16,
+        "title": "baltic-brew",
+        "description": "Одностраничный лендинг крафтового бара Baltic Brew.",
+        "stack": "HTML, CSS, JavaScript",
+        "bullets": [
+          "Витрина недельного ассортимента кранов",
+          "Галерея и блок групповых заказов",
+          "Форма бронирования по телефону",
+          "Один HTML-файл без сборки и зависимостей"
+        ],
+        "image_url": "/uploads/img-1792166303501-fe81ff39.png",
+        "repo_url": "https://github.com/auryxn/baltic_brew_preview",
+        "sort_order": 8
+      }
+    ],
+    "stack": [
+      {
+        "id": 1,
+        "name": "TypeScript",
+        "sort_order": 1
+      },
+      {
+        "id": 2,
+        "name": "React",
+        "sort_order": 2
+      },
+      {
+        "id": 3,
+        "name": "Go",
+        "sort_order": 3
+      },
+      {
+        "id": 4,
+        "name": "Python",
+        "sort_order": 4
+      },
+      {
+        "id": 5,
+        "name": "Node.js",
+        "sort_order": 5
+      },
+      {
+        "id": 6,
+        "name": "PostgreSQL",
+        "sort_order": 6
+      },
+      {
+        "id": 7,
+        "name": "Docker",
+        "sort_order": 7
+      },
+      {
+        "id": 8,
+        "name": "Kubernetes",
+        "sort_order": 8
+      },
+      {
+        "id": 9,
+        "name": "GraphQL",
+        "sort_order": 9
+      },
+      {
+        "id": 10,
+        "name": "Rust",
+        "sort_order": 10
+      },
+      {
+        "id": 11,
+        "name": "Redis",
+        "sort_order": 11
+      },
+      {
+        "id": 12,
+        "name": "AWS",
+        "sort_order": 12
+      }
+    ],
+    "experience": [
+      {
+        "id": 1,
+        "period": "2024+",
+        "company": "Orbita",
+        "description": "Tech Lead. Команда из 6 человек. Монолит в сервисы, API быстрее втрое.",
+        "sort_order": 1
+      },
+      {
+        "id": 2,
+        "period": "2021–24",
+        "company": "Pixelforge",
+        "description": "Senior Developer. Аналитика на React и Go для 200 тысяч человек.",
+        "sort_order": 2
+      },
+      {
+        "id": 3,
+        "period": "2019–21",
+        "company": "Kvant",
+        "description": "Frontend. Дизайн-система и автотесты.",
+        "sort_order": 3
+      },
+      {
+        "id": 4,
+        "period": "2017–19",
+        "company": "Фриланс",
+        "description": "Сайты, боты, приложения. Много ошибок.",
+        "sort_order": 4
+      }
+    ],
+    "links": [
+      {
+        "id": 9,
+        "label": "GitHub",
+        "url": "https://github.com/auryxn",
+        "sort_order": 1
+      },
+      {
+        "id": 10,
+        "label": "Telegram",
+        "url": "#",
+        "sort_order": 2
+      },
+      {
+        "id": 11,
+        "label": "LinkedIn",
+        "url": "#",
+        "sort_order": 3
+      },
+      {
+        "id": 12,
+        "label": "Резюме.pdf (3 МБ, зачем-то)",
+        "url": "#",
+        "sort_order": 4
+      }
+    ],
+    "settings": {
+      "counter_start": "137",
+      "title_bar": "C:\\Users\\alex\\Desktop\\portfolio\\index_final_v3_REAL_FINAL.html — Netscape Navigator 4.0",
+      "marquee_text": "★ ВНИМАНИЕ ★ ЭТОТ САЙТ НАМЕРЕННО ВЫГЛЯДИТ ТАК ★ НАНИМАЙТЕ РАЗРАБОТЧИКА ★ ",
+      "projects_note": "Нажми на строку. Или не нажимай. Мне всё равно (нет).",
+      "contacts_note": "Пишите, отвечаю быстрее, чем грузится этот сайт:",
+      "footer_text": "© 2026 Алексей Иода. Лучше всего просматривается в Netscape Navigator. Страница обновлена: вчера (нет).",
+      "badge": "ВЕБ 1.0",
+      "popup_title": "Поздравляем!",
+      "popup_text": "Вы нашли разработчика! Хотите нанять Алексея?"
+    },
+    "ui": {
+      "bsod.button": "НЕ_НАЖИМАТЬ.exe",
+      "bsod.line1": "Критическая ошибка: слишком честный сайт.",
+      "bsod.line2": "Нажмите любую клавишу или коснитесь экрана_",
+      "bsod.tag": "Ошибка",
+      "error.hint": "Не удалось получить данные с сервера. Обновите страницу.",
+      "error.load": "ОШИБКА ЗАГРУЗКИ ДАННЫХ",
+      "exp.what": "Что делал",
+      "exp.when": "Когда",
+      "exp.where": "Где",
+      "follower": "← ты тут",
+      "intro.dev": "Пишу сайты и сервисы",
+      "intro.fallback_bio": "Этот сайт намеренно выглядит так.",
+      "intro.prefix": "Я",
+      "intro.status": "Статус:",
+      "lang.label": "Язык:",
+      "loading": "ЗАГРУЗКА… ПОЖАЛУЙСТА, ПОДОЖДИТЕ / Netscape Navigator 4.0",
+      "nav.contacts": "Контакты",
+      "nav.experience": "Опыт",
+      "nav.new": "NEW!",
+      "nav.projects": "Проекты",
+      "nav.stack": "Стек",
+      "popup.mail_subject": "Хочу нанять",
+      "popup.no": "Закрыть",
+      "popup.no_final": "Ладно, закрывай",
+      "popup.yes": "Да, конечно",
+      "projects.image_placeholder": "[ИЗОБРАЖЕНИЕ НЕ НАЙДЕНО]",
+      "projects.repo_link": "[открыть репозиторий →]",
+      "projects.stack_label": "Стек:",
+      "section.contacts": "КОНТАКТЫ",
+      "section.experience": "ОПЫТ",
+      "section.projects": "ПРОЕКТЫ",
+      "section.stack": "СТЕК",
+      "visitors": "Посетителей:"
+    }
+  },
+  "lt": {
+    "lang": "lt",
+    "langs": [
+      "ru",
+      "lt",
+      "en"
+    ],
+    "profile": {
+      "name": "Aliaksei Ioda",
+      "title": "Studentas",
+      "years": "0 metų",
+      "bio_text": "Ši svetainė <span class=\"red\">tyčia</span> atrodo būtent taip, nes moku padaryti gražiai, bet nusprendžiau, kad jums bus nuobodu.",
+      "status": "IEŠKAU DARBO",
+      "email": "aliaksei.ioda@gmail.com"
+    },
+    "projects": [
+      {
+        "id": 9,
+        "title": "site-admin",
+        "description": "Asmeninė Web 1.0 stiliaus portfelio svetainė su administravimo skydeliu.",
+        "stack": "React, Vite, Node.js, SQLite",
+        "bullets": [
+          "Vieša svetainė ir skydelis viename Node procese",
+          "Turinys redaguojamas be programuotojo",
+          "Daugiakalbystė RU / LT / EN",
+          "Vaizdų įkėlimas į uploads/"
+        ],
+        "image_url": "/uploads/img-1792166303295-cc828524.png",
+        "repo_url": "https://github.com/auryxn/site-admin",
+        "sort_order": 1
+      },
+      {
+        "id": 10,
+        "title": "velora-cafe",
+        "description": "Kavos namų Velora Café svetainė su redaguojamu skydeliu.",
+        "stack": "React, Vite, Tailwind, Node.js, SQLite",
+        "bullets": [
+          "Meniu, atsiliepimai, galerija ir rezervacijos",
+          "Skydelis visam turiniui ir kainoms redaguoti",
+          "Rezervacijų užklausos su būsenomis",
+          "Autentifikacija HMAC prieigos raktu"
+        ],
+        "image_url": "/uploads/img-1792166303343-0ac47a8b.png",
+        "repo_url": "https://github.com/auryxn/velora-cafe",
+        "sort_order": 2
+      },
+      {
+        "id": 11,
+        "title": "kavine-koralai",
+        "description": "Lietuviškos kavinės „Kavinė Koralai“ svetainė su skydeliu.",
+        "stack": "React, Vite, Tailwind, Node.js, SQLite",
+        "bullets": [
+          "Lokalizuota lietuviška kavinės svetainė",
+          "Meniu, galerija ir atsiliepimai iš skydelio",
+          "Bendra architektūra su velora-cafe",
+          "SQLite su idempotentiniu duomenų sėjimu"
+        ],
+        "image_url": "/uploads/img-1792166303378-dc844968.png",
+        "repo_url": "https://github.com/auryxn/kavine-koralai",
+        "sort_order": 3
+      },
+      {
+        "id": 12,
+        "title": "barlink",
+        "description": "Pažinčių baruose žiniatinklio MVP: žemėlapis, susitikimai ir pokalbiai.",
+        "stack": "React, Vite, Tailwind, Leaflet, Express, SQLite",
+        "bullets": [
+          "Interaktyvus Vilniaus barų žemėlapis",
+          "Susitikimų kūrimas ir prisijungimas",
+          "Grupių pokalbiai ir dalyvių sąrašas",
+          "Demo sąsaja telefono rėmelyje"
+        ],
+        "image_url": "/uploads/img-1792166303393-e80a04b8.png",
+        "repo_url": "https://github.com/auryxn/barlink",
+        "sort_order": 4
+      },
+      {
+        "id": 13,
+        "title": "filmrank",
+        "description": "Asmeninis filmų reitingas: Tinder stiliaus braukimai ir dvikovos.",
+        "stack": "React 19, Vite, framer-motion, TMDB API",
+        "bullets": [
+          "Kortelių braukimas iš TMDB katalogo",
+          "Dvikovos: kuris filmas geresnis",
+          "Reitingas ir S–F pakopų sąrašas",
+          "Skonio statistika ir viršūnės eksportas"
+        ],
+        "image_url": "/uploads/img-1792166303410-e61ff381.png",
+        "repo_url": "https://github.com/auryxn/filmrank",
+        "sort_order": 5
+      },
+      {
+        "id": 14,
+        "title": "internet-city",
+        "description": "Interaktyvus 3D modelis, parodantis, kaip veikia internetas.",
+        "stack": "TypeScript, Vite, Three.js, WebGL",
+        "bullets": [
+          "3D scena: paslaugos-pastatai ir paketai-sunkvežimiai",
+          "10 žingsnių nuo URL iki puslapio atvaizdavimo",
+          "„Paprastas“ ir „Techninis“ režimai",
+          "Paketo praradimo simuliacija ir viktorina"
+        ],
+        "image_url": "/uploads/img-1792166303449-f8b37953.png",
+        "repo_url": "https://github.com/auryxn/internet-city",
+        "sort_order": 6
+      },
+      {
+        "id": 15,
+        "title": "ai-creative-studio",
+        "description": "Next.js MVP — darbo vieta AI vaizdo įrašų gamybai.",
+        "stack": "Next.js 15, React 19, TypeScript, Tailwind",
+        "bullets": [
+          "Skydelis su filmų gamybos eiga",
+          "Scenarijus, storyboard ir veikėjai",
+          "Užklausų konstruktorius su versijavimu",
+          "Saugoma lokaliai, su perėjimu prie Supabase"
+        ],
+        "image_url": "/uploads/img-1792166303456-f0c301d3.png",
+        "repo_url": "https://github.com/auryxn/ai-creative-studio",
+        "sort_order": 7
+      },
+      {
+        "id": 16,
+        "title": "baltic-brew",
+        "description": "Vieno puslapio „Baltic Brew“ amatų baro nukreipimo svetainė.",
+        "stack": "HTML, CSS, JavaScript",
+        "bullets": [
+          "Savaitės čiaupų asortimento vitrina",
+          "Galerija ir grupinių užsakymų blokas",
+          "Rezervacijos telefonu forma",
+          "Vienas HTML failas be kūrimo įrankių ir priklausomybių"
+        ],
+        "image_url": "/uploads/img-1792166303501-fe81ff39.png",
+        "repo_url": "https://github.com/auryxn/baltic_brew_preview",
+        "sort_order": 8
+      }
+    ],
+    "stack": [
+      {
+        "id": 1,
+        "name": "TypeScript",
+        "sort_order": 1
+      },
+      {
+        "id": 2,
+        "name": "React",
+        "sort_order": 2
+      },
+      {
+        "id": 3,
+        "name": "Go",
+        "sort_order": 3
+      },
+      {
+        "id": 4,
+        "name": "Python",
+        "sort_order": 4
+      },
+      {
+        "id": 5,
+        "name": "Node.js",
+        "sort_order": 5
+      },
+      {
+        "id": 6,
+        "name": "PostgreSQL",
+        "sort_order": 6
+      },
+      {
+        "id": 7,
+        "name": "Docker",
+        "sort_order": 7
+      },
+      {
+        "id": 8,
+        "name": "Kubernetes",
+        "sort_order": 8
+      },
+      {
+        "id": 9,
+        "name": "GraphQL",
+        "sort_order": 9
+      },
+      {
+        "id": 10,
+        "name": "Rust",
+        "sort_order": 10
+      },
+      {
+        "id": 11,
+        "name": "Redis",
+        "sort_order": 11
+      },
+      {
+        "id": 12,
+        "name": "AWS",
+        "sort_order": 12
+      }
+    ],
+    "experience": [
+      {
+        "id": 1,
+        "period": "2024+",
+        "company": "Orbita",
+        "description": "Tech Lead. 6 žmonių komanda. Monolitas išskaidytas į servisus, API triskart greitesnis.",
+        "sort_order": 1
+      },
+      {
+        "id": 2,
+        "period": "2021–24",
+        "company": "Pixelforge",
+        "description": "Senior Developer. Analitika su React ir Go 200 tūkstančių žmonių.",
+        "sort_order": 2
+      },
+      {
+        "id": 3,
+        "period": "2019–21",
+        "company": "Kvant",
+        "description": "Frontend. Dizaino sistema ir automatizuoti testai.",
+        "sort_order": 3
+      },
+      {
+        "id": 4,
+        "period": "2017–19",
+        "company": "Laisvai samdomas",
+        "description": "Svetainės, botai, programėlės. Daug klaidų.",
+        "sort_order": 4
+      }
+    ],
+    "links": [
+      {
+        "id": 9,
+        "label": "GitHub",
+        "url": "https://github.com/auryxn",
+        "sort_order": 1
+      },
+      {
+        "id": 10,
+        "label": "Telegram",
+        "url": "#",
+        "sort_order": 2
+      },
+      {
+        "id": 11,
+        "label": "LinkedIn",
+        "url": "#",
+        "sort_order": 3
+      },
+      {
+        "id": 12,
+        "label": "CV.pdf (3 MB, kam gi)",
+        "url": "#",
+        "sort_order": 4
+      }
+    ],
+    "settings": {
+      "counter_start": "137",
+      "title_bar": "C:\\Users\\alex\\Desktop\\portfolio\\index_final_v3_REAL_FINAL.html — Netscape Navigator 4.0",
+      "marquee_text": "★ DĖMESIO ★ ŠI SVETAINĖ TYČIA ATRODO TAIP ★ SAMDAUKITE PROGRAMUOTOJĄ ★ ",
+      "projects_note": "Spausk ant eilutės. Arba nespausk. Man vis tiek (ne).",
+      "contacts_note": "Rašykite, atsakau greičiau, nei įkeliama ši svetainė:",
+      "footer_text": "© 2026 Aliaksei Ioda. Geriausiai žiūrima „Netscape Navigator“. Puslapis atnaujintas: vakar (ne).",
+      "badge": "WEB 1.0",
+      "popup_title": "Sveikiname!",
+      "popup_text": "Radote programuotoją! Norite pasamdyti Aleksejų?"
+    },
+    "ui": {
+      "bsod.button": "NESPAUSTI.exe",
+      "bsod.line1": "Kritinė klaida: pernelyg sąžininga svetainė.",
+      "bsod.line2": "Spauskite bet kurį klavišą arba palieskite ekraną_",
+      "bsod.tag": "Klaida",
+      "error.hint": "Nepavyko gauti duomenų iš serverio. Atnaujinkite puslapį.",
+      "error.load": "DUOMENŲ ĮKĖLIMO KLAIDA",
+      "exp.what": "Ką veikiau",
+      "exp.when": "Kada",
+      "exp.where": "Kur",
+      "follower": "← tu čia",
+      "intro.dev": "Kuriu svetaines ir servisus",
+      "intro.fallback_bio": "Ši svetainė tyčia atrodo taip.",
+      "intro.prefix": "Esu",
+      "intro.status": "Statusas:",
+      "lang.label": "Kalba:",
+      "loading": "KRAUNAMA… PALAUKITE / Netscape Navigator 4.0",
+      "nav.contacts": "Kontaktai",
+      "nav.experience": "Patirtis",
+      "nav.new": "NEW!",
+      "nav.projects": "Projektai",
+      "nav.stack": "Stack",
+      "popup.mail_subject": "Noriu pasamdyti",
+      "popup.no": "Uždaryti",
+      "popup.no_final": "Gerai, uždaryk",
+      "popup.yes": "Taip, žinoma",
+      "projects.image_placeholder": "[VAIZDAS NERASTAS]",
+      "projects.repo_link": "[atidaryti repozitoriją →]",
+      "projects.stack_label": "Stack:",
+      "section.contacts": "KONTAKTAI",
+      "section.experience": "PATIRTIS",
+      "section.projects": "PROJEKTAI",
+      "section.stack": "STACK",
+      "visitors": "Lankytojų:"
+    }
+  },
+  "en": {
+    "lang": "en",
+    "langs": [
+      "ru",
+      "lt",
+      "en"
+    ],
+    "profile": {
+      "name": "Aliaksei Ioda",
+      "title": "Student",
+      "years": "0 years",
+      "bio_text": "This site <span class=\"red\">deliberately</span> looks like this, because I can make it pretty, but I decided you would be bored.",
+      "status": "LOOKING FOR WORK",
+      "email": "aliaksei.ioda@gmail.com"
+    },
+    "projects": [
+      {
+        "id": 9,
+        "title": "site-admin",
+        "description": "Personal Web 1.0 style portfolio site with an admin panel.",
+        "stack": "React, Vite, Node.js, SQLite",
+        "bullets": [
+          "Public site and admin panel in one Node process",
+          "Content edited without a developer",
+          "Multilingual RU / LT / EN",
+          "Image upload to uploads/"
+        ],
+        "image_url": "/uploads/img-1792166303295-cc828524.png",
+        "repo_url": "https://github.com/auryxn/site-admin",
+        "sort_order": 1
+      },
+      {
+        "id": 10,
+        "title": "velora-cafe",
+        "description": "Velora Café coffee shop site with an editable admin panel.",
+        "stack": "React, Vite, Tailwind, Node.js, SQLite",
+        "bullets": [
+          "Menu, reviews, gallery and reservations",
+          "Admin panel editing all content and prices",
+          "Reservation requests with statuses",
+          "HMAC token authentication"
+        ],
+        "image_url": "/uploads/img-1792166303343-0ac47a8b.png",
+        "repo_url": "https://github.com/auryxn/velora-cafe",
+        "sort_order": 2
+      },
+      {
+        "id": 11,
+        "title": "kavine-koralai",
+        "description": "Website for the Lithuanian café Kavinė Koralai with an admin panel.",
+        "stack": "React, Vite, Tailwind, Node.js, SQLite",
+        "bullets": [
+          "Localized Lithuanian café website",
+          "Menu, gallery and reviews from the admin panel",
+          "Same architecture as velora-cafe",
+          "SQLite with idempotent seeding"
+        ],
+        "image_url": "/uploads/img-1792166303378-dc844968.png",
+        "repo_url": "https://github.com/auryxn/kavine-koralai",
+        "sort_order": 3
+      },
+      {
+        "id": 12,
+        "title": "barlink",
+        "description": "A web MVP for dating in bars: map, meetups and chat.",
+        "stack": "React, Vite, Tailwind, Leaflet, Express, SQLite",
+        "bullets": [
+          "Interactive map of Vilnius bars",
+          "Creating and joining meetups",
+          "Group chat and participant list",
+          "Demo interface in a phone frame"
+        ],
+        "image_url": "/uploads/img-1792166303393-e80a04b8.png",
+        "repo_url": "https://github.com/auryxn/barlink",
+        "sort_order": 4
+      },
+      {
+        "id": 13,
+        "title": "filmrank",
+        "description": "A personal movie ranking: Tinder-style swipes and duels.",
+        "stack": "React 19, Vite, framer-motion, TMDB API",
+        "bullets": [
+          "Swipe deck of cards from the TMDB catalog",
+          "Duels: which movie is better",
+          "Ranking and S–F tier list",
+          "Taste statistics and top export"
+        ],
+        "image_url": "/uploads/img-1792166303410-e61ff381.png",
+        "repo_url": "https://github.com/auryxn/filmrank",
+        "sort_order": 5
+      },
+      {
+        "id": 14,
+        "title": "internet-city",
+        "description": "An interactive 3D model of how the internet works.",
+        "stack": "TypeScript, Vite, Three.js, WebGL",
+        "bullets": [
+          "3D scene: services as buildings, packets as trucks",
+          "10 steps from URL to page render",
+          "“Simple” and “Technical” modes",
+          "Packet-loss simulation and a quiz"
+        ],
+        "image_url": "/uploads/img-1792166303449-f8b37953.png",
+        "repo_url": "https://github.com/auryxn/internet-city",
+        "sort_order": 6
+      },
+      {
+        "id": 15,
+        "title": "ai-creative-studio",
+        "description": "A Next.js MVP — a workspace for AI video production.",
+        "stack": "Next.js 15, React 19, TypeScript, Tailwind",
+        "bullets": [
+          "Dashboard with movie production progress",
+          "Script, storyboard and characters",
+          "Prompt builder with versioning",
+          "Stored locally, with a path to Supabase"
+        ],
+        "image_url": "/uploads/img-1792166303456-f0c301d3.png",
+        "repo_url": "https://github.com/auryxn/ai-creative-studio",
+        "sort_order": 7
+      },
+      {
+        "id": 16,
+        "title": "baltic-brew",
+        "description": "A one-page landing for the Baltic Brew craft beer bar.",
+        "stack": "HTML, CSS, JavaScript",
+        "bullets": [
+          "Weekly tap assortment showcase",
+          "Gallery and group-order block",
+          "Phone reservation form",
+          "A single HTML file, no build or dependencies"
+        ],
+        "image_url": "/uploads/img-1792166303501-fe81ff39.png",
+        "repo_url": "https://github.com/auryxn/baltic_brew_preview",
+        "sort_order": 8
+      }
+    ],
+    "stack": [
+      {
+        "id": 1,
+        "name": "TypeScript",
+        "sort_order": 1
+      },
+      {
+        "id": 2,
+        "name": "React",
+        "sort_order": 2
+      },
+      {
+        "id": 3,
+        "name": "Go",
+        "sort_order": 3
+      },
+      {
+        "id": 4,
+        "name": "Python",
+        "sort_order": 4
+      },
+      {
+        "id": 5,
+        "name": "Node.js",
+        "sort_order": 5
+      },
+      {
+        "id": 6,
+        "name": "PostgreSQL",
+        "sort_order": 6
+      },
+      {
+        "id": 7,
+        "name": "Docker",
+        "sort_order": 7
+      },
+      {
+        "id": 8,
+        "name": "Kubernetes",
+        "sort_order": 8
+      },
+      {
+        "id": 9,
+        "name": "GraphQL",
+        "sort_order": 9
+      },
+      {
+        "id": 10,
+        "name": "Rust",
+        "sort_order": 10
+      },
+      {
+        "id": 11,
+        "name": "Redis",
+        "sort_order": 11
+      },
+      {
+        "id": 12,
+        "name": "AWS",
+        "sort_order": 12
+      }
+    ],
+    "experience": [
+      {
+        "id": 1,
+        "period": "2024+",
+        "company": "Orbita",
+        "description": "Tech Lead. A team of 6. Broke the monolith into services, API three times faster.",
+        "sort_order": 1
+      },
+      {
+        "id": 2,
+        "period": "2021–24",
+        "company": "Pixelforge",
+        "description": "Senior Developer. Analytics in React and Go for 200 thousand people.",
+        "sort_order": 2
+      },
+      {
+        "id": 3,
+        "period": "2019–21",
+        "company": "Kvant",
+        "description": "Frontend. Design system and automated tests.",
+        "sort_order": 3
+      },
+      {
+        "id": 4,
+        "period": "2017–19",
+        "company": "Freelance",
+        "description": "Websites, bots, apps. Lots of mistakes.",
+        "sort_order": 4
+      }
+    ],
+    "links": [
+      {
+        "id": 9,
+        "label": "GitHub",
+        "url": "https://github.com/auryxn",
+        "sort_order": 1
+      },
+      {
+        "id": 10,
+        "label": "Telegram",
+        "url": "#",
+        "sort_order": 2
+      },
+      {
+        "id": 11,
+        "label": "LinkedIn",
+        "url": "#",
+        "sort_order": 3
+      },
+      {
+        "id": 12,
+        "label": "Resume.pdf (3 MB, for some reason)",
+        "url": "#",
+        "sort_order": 4
+      }
+    ],
+    "settings": {
+      "counter_start": "137",
+      "title_bar": "C:\\Users\\alex\\Desktop\\portfolio\\index_final_v3_REAL_FINAL.html — Netscape Navigator 4.0",
+      "marquee_text": "★ ATTENTION ★ THIS SITE DELIBERATELY LOOKS LIKE THIS ★ HIRE A DEVELOPER ★ ",
+      "projects_note": "Click a row. Or don’t. I don’t care (I do).",
+      "contacts_note": "Write to me — I reply faster than this site loads:",
+      "footer_text": "© 2026 Aliaksei Ioda. Best viewed in Netscape Navigator. Page updated: yesterday (no).",
+      "badge": "WEB 1.0",
+      "popup_title": "Congratulations!",
+      "popup_text": "You found a developer! Want to hire Alexey?"
+    },
+    "ui": {
+      "bsod.button": "DO_NOT_PRESS.exe",
+      "bsod.line1": "Critical error: a site that is too honest.",
+      "bsod.line2": "Press any key or tap the screen_",
+      "bsod.tag": "Error",
+      "error.hint": "Could not fetch data from the server. Refresh the page.",
+      "error.load": "DATA LOAD ERROR",
+      "exp.what": "What I did",
+      "exp.when": "When",
+      "exp.where": "Where",
+      "follower": "← you are here",
+      "intro.dev": "I build websites and services",
+      "intro.fallback_bio": "This site deliberately looks like this.",
+      "intro.prefix": "I am",
+      "intro.status": "Status:",
+      "lang.label": "Language:",
+      "loading": "LOADING… PLEASE WAIT / Netscape Navigator 4.0",
+      "nav.contacts": "Contacts",
+      "nav.experience": "Experience",
+      "nav.new": "NEW!",
+      "nav.projects": "Projects",
+      "nav.stack": "Stack",
+      "popup.mail_subject": "I want to hire",
+      "popup.no": "Close",
+      "popup.no_final": "Fine, close it",
+      "popup.yes": "Yes, of course",
+      "projects.image_placeholder": "[IMAGE NOT FOUND]",
+      "projects.repo_link": "[open repository →]",
+      "projects.stack_label": "Stack:",
+      "section.contacts": "CONTACTS",
+      "section.experience": "EXPERIENCE",
+      "section.projects": "PROJECTS",
+      "section.stack": "STACK",
+      "visitors": "Visitors:"
+    }
+  }
+}
