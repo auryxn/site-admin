@@ -302,6 +302,36 @@ const SEED_PROJECTS = [
       en: ['Weekly tap assortment showcase', 'Gallery and group-order block', 'Phone reservation form', 'A single HTML file, no build or dependencies'],
     },
   },
+  {
+    repo_url: 'https://github.com/auryxn/cipher-lab',
+    title: { ru: 'cipher-lab', lt: 'cipher-lab', en: 'cipher-lab' },
+    description: {
+      ru: 'Лаборатория классических шифров в браузере: шифруй и расшифровывай Цезаря, Атбаш, Виженера, XOR, Base64 и Морзе. Отдельный режим взлома пробует частотный анализ, перебор всех ключей Цезаря и авто-взлом Виженера без знания ключа.',
+      lt: 'Klasikinių šifrų laboratorija naršyklėje: šifruok ir dešifruok Cezario, Atbash, Vigenère, XOR, Base64 ir Morzės kodus. Atskiras „lūžimo“ režimas bando dažnių analizę, visų Cezario raktų perrinkimą ir automatinį Vigenère įsilaužimą be rakto.',
+      en: 'A browser lab for classic ciphers: encode and decode Caesar, Atbash, Vigenère, XOR, Base64 and Morse. A dedicated crack mode runs frequency analysis, a full Caesar key brute-force, and automatic Vigenère cracking without the key.',
+    },
+    stack: { ru: 'JavaScript, Vite', lt: 'JavaScript, Vite', en: 'JavaScript, Vite' },
+    bullets: {
+      ru: ['Шесть шифров: Цезарь, Атбаш, Виженер, XOR, Base64, Морзе', 'Режим взлома: частотный анализ и перебор Цезаря', 'Авто-взлом Виженера без знания ключа', 'Объяснения алгоритмов и пошаговые примеры'],
+      lt: ['Šeši šifrai: Cezaris, Atbash, Vigenère, XOR, Base64, Morzė', 'Lūžimo režimas: dažnių analizė ir Cezario perrinkimas', 'Automatinis Vigenère įsilaužimas be rakto', 'Algoritmų paaiškinimai ir pavyzdžiai žingsnis po žingsnio'],
+      en: ['Six ciphers: Caesar, Atbash, Vigenère, XOR, Base64, Morse', 'Crack mode: frequency analysis and Caesar brute-force', 'Automatic Vigenère cracking without the key', 'Algorithm explanations and step-by-step examples'],
+    },
+  },
+  {
+    repo_url: 'https://github.com/auryxn/beatgrid',
+    title: { ru: 'beatgrid', lt: 'beatgrid', en: 'beatgrid' },
+    description: {
+      ru: 'Веб-секвенсор драм-машины на Web Audio API: 7 дорожек по 16 шагов, управление BPM и свингом, пресеты House, Hip-hop, Breakbeat и Trap. Есть генератор случайного бита, mute по дорожкам, шаринг ссылкой и сохранение проектов прямо в браузере.',
+      lt: 'Žiniatinklio būgnų mašinos sekvenceris su Web Audio API: 7 takeliai po 16 žingsnių, BPM ir swing valdymas, House, Hip-hop, Breakbeat ir Trap presetai. Yra atsitiktinio bito generatorius, takelių mute, bendrinimas nuoroda ir projektų išsaugojimas naršyklėje.',
+      en: 'A web drum-machine sequencer built on Web Audio API: 7 tracks × 16 steps, BPM and swing control, and House, Hip-hop, Breakbeat and Trap presets. It includes a random beat generator, per-track mute, share-by-link and browser-local saving.',
+    },
+    stack: { ru: 'JavaScript, Vite, Web Audio API', lt: 'JavaScript, Vite, Web Audio API', en: 'JavaScript, Vite, Web Audio API' },
+    bullets: {
+      ru: ['7 дорожек × 16 шагов с точным таймингом Web Audio', 'Управление BPM и свингом, mute по дорожкам', 'Пресеты House, Hip-hop, Breakbeat, Trap и рандом', 'Шаринг ссылкой и сохранение проектов в браузере'],
+      lt: ['7 takeliai × 16 žingsnių su tiksliu Web Audio laiku', 'BPM ir swing valdymas, takelių mute', 'House, Hip-hop, Breakbeat, Trap presetai ir atsitiktinis', 'Bendrinimas nuoroda ir projektų išsaugojimas naršyklėje'],
+      en: ['7 tracks × 16 steps with precise Web Audio timing', 'BPM and swing control, per-track mute', 'House, Hip-hop, Breakbeat, Trap presets plus random', 'Share-by-link and browser-local project saving'],
+    },
+  },
 ];
 
 // Legacy projects that must be removed on migration (fictional demos + retired
@@ -466,31 +496,39 @@ const SEED_EXPERIENCE = [
 // Legacy fictional experience entries that must be removed on migration.
 const LEGACY_EXPERIENCE_COMPANIES = ['Orbita', 'Pixelforge', 'Kvant', 'Фриланс', 'Laisvai samdomas', 'Freelance'];
 
+// Curated contact links (no placeholders, no LinkedIn). Order: Telegram,
+// GitHub, Email. The email uses a mailto: URL so it opens the mail client.
 const SEED_LINKS = [
   {
-    label: { ru: 'GitHub', lt: 'GitHub', en: 'GitHub' },
-    url: '#',
+    label: { ru: 'Telegram', lt: 'Telegram', en: 'Telegram' },
+    url: 'https://t.me/auryxn',
     sort_order: 1,
   },
   {
-    label: { ru: 'Telegram', lt: 'Telegram', en: 'Telegram' },
-    url: '#',
+    label: { ru: 'GitHub', lt: 'GitHub', en: 'GitHub' },
+    url: 'https://github.com/auryxn',
     sort_order: 2,
   },
   {
-    label: { ru: 'LinkedIn', lt: 'LinkedIn', en: 'LinkedIn' },
-    url: '#',
+    label: {
+      ru: 'Email',
+      lt: 'El. paštas',
+      en: 'Email',
+    },
+    url: 'mailto:aliaksei.ioda@gmail.com',
     sort_order: 3,
   },
-  {
-    label: {
-      ru: 'Резюме.pdf (3 МБ, зачем-то)',
-      lt: 'CV.pdf (3 MB, kam gi)',
-      en: 'Resume.pdf (3 MB, for some reason)',
-    },
-    url: '#',
-    sort_order: 4,
-  },
+];
+
+// Link labels (ru) that are retired/placeholders and must be removed on
+// reconcile. LinkedIn was dropped entirely; the joke Resume.pdf entry and any
+// hash/empty URL stub are placeholders and go too.
+const LEGACY_LINK_LABELS = [
+  'LinkedIn',
+  'линкедин',
+  'Резюме.pdf (3 МБ, зачем-то)',
+  'CV.pdf (3 MB, kam gi)',
+  'Resume.pdf (3 MB, for some reason)',
 ];
 
 // settings.value becomes '<key>_<lang>' rows: s:<key>:ru / s:<key>:lt / s:<key>:en
@@ -928,6 +966,66 @@ function replaceExperience(db) {
   }
 }
 
+// Bring the `links` table in line with SEED_LINKS: drop retired placeholders
+// (LinkedIn, the joke resume, any '#' or empty url) and make sure exactly the
+// curated links exist with the right labels, urls and order. Idempotent; runs
+// on every open so an older DB (or one seeded with placeholders) self-heals.
+function reconcileLinks(db) {
+  const rows = db.prepare('SELECT id, label, label_ru, label_lt, label_en, url FROM links').all();
+  const del = db.prepare('DELETE FROM links WHERE id = ?');
+
+  const curatedByUrl = new Map(SEED_LINKS.map((l) => [l.url, l]));
+  const curatedByLabel = new Map(
+    SEED_LINKS.map((l) => [String(l.label.ru).trim().toLowerCase(), l])
+  );
+
+  // 1) Remove retired links (legacy labels) and placeholder urls ('#' / empty)
+  //    that do not belong to a curated link.
+  for (const r of rows) {
+    const label = String(r.label_ru || r.label || '').trim();
+    const url = String(r.url || '').trim();
+    const isCurated = curatedByUrl.has(url) || curatedByLabel.has(label.toLowerCase());
+    if (isCurated) continue;
+    if (LEGACY_LINK_LABELS.includes(label)) {
+      runGuarded(() => del.run(r.id));
+      continue;
+    }
+    if (url === '' || url === '#') {
+      runGuarded(() => del.run(r.id));
+    }
+  }
+
+  // 2) Ensure every curated link exists with correct label/url/order. Match by
+  //    url first (stable), then by label; otherwise insert.
+  const current = () => db.prepare('SELECT id, label, label_ru, url FROM links').all();
+  const ins = db.prepare(
+    `INSERT INTO links (label, url, sort_order, label_ru, label_lt, label_en)
+     VALUES (?, ?, ?, ?, ?, ?)`
+  );
+  const upd = db.prepare(
+    `UPDATE links SET label = ?, url = ?, sort_order = ?, label_ru = ?, label_lt = ?, label_en = ?
+     WHERE id = ?`
+  );
+  SEED_LINKS.forEach((l) => {
+    const all = current();
+    const row =
+      all.find((r) => String(r.url || '').trim() === l.url) ||
+      all.find(
+        (r) => String(r.label_ru || r.label || '').trim().toLowerCase() ===
+          String(l.label.ru).trim().toLowerCase()
+      );
+    if (!row) {
+      runGuarded(() =>
+        ins.run(l.label.ru, l.url, l.sort_order, l.label.ru, l.label.lt, l.label.en)
+      );
+    } else {
+      runGuarded(() =>
+        upd.run(l.label.ru, l.url, l.sort_order, l.label.ru, l.label.lt, l.label.en, row.id)
+      );
+    }
+  });
+}
+
 // Bring the `stack` table in line with SEED_STACK_NAMES (add missing, drop
 // removed, fix sort_order). Localized columns mirror the (identical) name.
 function reconcileStack(db) {
@@ -1166,7 +1264,8 @@ function applySeedTranslations(db) {
   fill('projects', { title: 'text', description: 'text', stack: 'text', bullets: 'json' }, SEED_PROJECTS, 'sort_order, id', 'title');
   fill('stack', { name: 'text' }, SEED_STACK_NAMES, 'sort_order, id', 'name');
   fill('experience', { company: 'text', description: 'text' }, SEED_EXPERIENCE, 'sort_order, id');
-  fill('links', { label: 'text' }, SEED_LINKS, 'sort_order, id');
+  fill('links', { label: 'text' }, SEED_LINKS, 'sort_order, id', 'url');
+  reconcileLinks(db);
 
   // Settings: always refresh from the curated seed (they are pure UI copy).
   const ins = db.prepare(

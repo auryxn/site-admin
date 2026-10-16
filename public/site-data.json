@@ -9,14 +9,14 @@
     "profile": {
       "name": "Алексей Иода",
       "title": "Студент",
-      "years": "0 лет",
+      "years": "3",
       "bio_text": "Этот сайт <span class=\"red\">намеренно</span> выглядит так, потому что я умею делать красиво, но решил, что вам будет скучно.",
       "status": "ИЩУ РАБОТУ",
       "email": "aliaksei.ioda@gmail.com"
     },
     "projects": [
       {
-        "id": 9,
+        "id": 1,
         "title": "site-admin",
         "description": "Личный сайт-портфолио в стиле Web 1.0 с админкой.",
         "stack": "React, Vite, Node.js, SQLite",
@@ -31,67 +31,7 @@
         "sort_order": 1
       },
       {
-        "id": 12,
-        "title": "barlink",
-        "description": "Веб-MVP знакомств в барах: карта, встречи и чат.",
-        "stack": "React, Vite, Tailwind, Leaflet, Express, SQLite",
-        "bullets": [
-          "Интерактивная карта баров Вильнюса",
-          "Создание и присоединение к встречам",
-          "Групповой чат и список участников",
-          "Демо-интерфейс в рамке телефона"
-        ],
-        "image_url": "/uploads/img-1792166303393-e80a04b8.png",
-        "repo_url": "https://github.com/auryxn/barlink",
-        "sort_order": 4
-      },
-      {
-        "id": 13,
-        "title": "filmrank",
-        "description": "Личный рейтинг фильмов: свайпы в стиле Tinder и дуэли.",
-        "stack": "React 19, Vite, framer-motion, TMDB API",
-        "bullets": [
-          "Свайп-колода карточек из каталога TMDB",
-          "Дуэли: какой фильм лучше",
-          "Рейтинг и tier-список S–F",
-          "Статистика вкуса и экспорт топа"
-        ],
-        "image_url": "/uploads/img-1792166303410-e61ff381.png",
-        "repo_url": "https://github.com/auryxn/filmrank",
-        "sort_order": 5
-      },
-      {
-        "id": 14,
-        "title": "internet-city",
-        "description": "Интерактивная 3D-модель того, как работает интернет.",
-        "stack": "TypeScript, Vite, Three.js, WebGL",
-        "bullets": [
-          "3D-сцена: сервисы-здания и пакеты-грузовики",
-          "10 шагов от URL до отрисовки страницы",
-          "Режимы «Просто» и «Технически»",
-          "Симуляция потери пакета и квиз"
-        ],
-        "image_url": "/uploads/img-1792166303449-f8b37953.png",
-        "repo_url": "https://github.com/auryxn/internet-city",
-        "sort_order": 6
-      },
-      {
-        "id": 16,
-        "title": "baltic-brew",
-        "description": "Одностраничный лендинг крафтового бара Baltic Brew.",
-        "stack": "HTML, CSS, JavaScript",
-        "bullets": [
-          "Витрина недельного ассортимента кранов",
-          "Галерея и блок групповых заказов",
-          "Форма бронирования по телефону",
-          "Один HTML-файл без сборки и зависимостей"
-        ],
-        "image_url": "/uploads/img-1792166303501-fe81ff39.png",
-        "repo_url": "https://github.com/auryxn/baltic_brew_preview",
-        "sort_order": 8
-      },
-      {
-        "id": 17,
+        "id": 2,
         "title": "shiftbot",
         "description": "Telegram-бот для краткосрочных подработок: админ публикует смены, работники записываются в пару кликов. Асинхронный бэкенд на aiogram 3 и PostgreSQL со статусами работ, планировщиком напоминаний и защитой от гонок при записи.",
         "stack": "Python 3.12, aiogram 3.x, PostgreSQL, SQLAlchemy 2.x, Alembic, Docker",
@@ -103,10 +43,10 @@
         ],
         "image_url": "",
         "repo_url": "https://github.com/auryxn/shiftbot",
-        "sort_order": 9
+        "sort_order": 2
       },
       {
-        "id": 18,
+        "id": 3,
         "title": "content-factory",
         "description": "Локальный «контент-завод»: режет длинные видео на короткие ролики под TikTok, накладывает фоновую музыку и ведёт расписание публикаций через веб-дашборд. Монтаж на ffmpeg, управление и прогресс — в дашборде на FastAPI.",
         "stack": "Python, FastAPI, Uvicorn, ffmpeg",
@@ -118,10 +58,10 @@
         ],
         "image_url": "",
         "repo_url": "https://github.com/auryxn/content-factory",
-        "sort_order": 10
+        "sort_order": 3
       },
       {
-        "id": 19,
+        "id": 4,
         "title": "homework-hub",
         "description": "Локальное веб-приложение для управления учебными заданиями из Microsoft Teams: сводит все дедлайны в одну доску и автоматически запускает агентов, которые решают задания. Скан Teams идёт через CDP-браузер, прогресс агента стримится в интерфейс по SSE.",
         "stack": "Node.js, JavaScript, HTML, CSS",
@@ -133,138 +73,243 @@
         ],
         "image_url": "",
         "repo_url": "https://github.com/auryxn/homework-hub",
+        "sort_order": 4
+      },
+      {
+        "id": 5,
+        "title": "barlink",
+        "description": "Веб-MVP знакомств в барах: карта, встречи и чат.",
+        "stack": "React, Vite, Tailwind, Leaflet, Express, SQLite",
+        "bullets": [
+          "Интерактивная карта баров Вильнюса",
+          "Создание и присоединение к встречам",
+          "Групповой чат и список участников",
+          "Демо-интерфейс в рамке телефона"
+        ],
+        "image_url": "/uploads/img-1792166303393-e80a04b8.png",
+        "repo_url": "https://github.com/auryxn/barlink",
+        "sort_order": 5
+      },
+      {
+        "id": 6,
+        "title": "filmrank",
+        "description": "Личный рейтинг фильмов: свайпы в стиле Tinder и дуэли.",
+        "stack": "React 19, Vite, framer-motion, TMDB API",
+        "bullets": [
+          "Свайп-колода карточек из каталога TMDB",
+          "Дуэли: какой фильм лучше",
+          "Рейтинг и tier-список S–F",
+          "Статистика вкуса и экспорт топа"
+        ],
+        "image_url": "/uploads/img-1792166303410-e61ff381.png",
+        "repo_url": "https://github.com/auryxn/filmrank",
+        "sort_order": 6
+      },
+      {
+        "id": 7,
+        "title": "internet-city",
+        "description": "Интерактивная 3D-модель того, как работает интернет.",
+        "stack": "TypeScript, Vite, Three.js, WebGL",
+        "bullets": [
+          "3D-сцена: сервисы-здания и пакеты-грузовики",
+          "10 шагов от URL до отрисовки страницы",
+          "Режимы «Просто» и «Технически»",
+          "Симуляция потери пакета и квиз"
+        ],
+        "image_url": "/uploads/img-1792166303449-f8b37953.png",
+        "repo_url": "https://github.com/auryxn/internet-city",
+        "sort_order": 7
+      },
+      {
+        "id": 8,
+        "title": "yoda-shop",
+        "description": "Демо интернет-магазина металлических чехлов YODA в духе тёмного фэнтези: витрина, каталог, корзина и оформление заказа через Stripe. Отдельная админ-панель с дашбордом, складом, заказами, промокодами и редактором контента; переключатель тёмной и светлой темы.",
+        "stack": "React, Vite, Node.js, Express, JavaScript, Stripe",
+        "bullets": [
+          "Витрина, каталог, карточка товара и корзина с уведомлениями",
+          "Оформление заказа через Stripe Checkout и промокоды",
+          "Админ-панель: дашборд, склад, заказы, скидки, баннер и тексты",
+          "Тёмная / светлая тема с сохранением выбора"
+        ],
+        "image_url": "/uploads/img-1792172735910-bc752472.png",
+        "repo_url": "https://github.com/auryxn/yoda-shop",
+        "sort_order": 8
+      },
+      {
+        "id": 9,
+        "title": "baltic-brew",
+        "description": "Одностраничный лендинг крафтового бара Baltic Brew.",
+        "stack": "HTML, CSS, JavaScript",
+        "bullets": [
+          "Витрина недельного ассортимента кранов",
+          "Галерея и блок групповых заказов",
+          "Форма бронирования по телефону",
+          "Один HTML-файл без сборки и зависимостей"
+        ],
+        "image_url": "/uploads/img-1792166303501-fe81ff39.png",
+        "repo_url": "https://github.com/auryxn/baltic_brew_preview",
+        "sort_order": 9
+      },
+      {
+        "id": 10,
+        "title": "cipher-lab",
+        "description": "Лаборатория классических шифров в браузере: шифруй и расшифровывай Цезаря, Атбаш, Виженера, XOR, Base64 и Морзе. Отдельный режим взлома пробует частотный анализ, перебор всех ключей Цезаря и авто-взлом Виженера без знания ключа.",
+        "stack": "JavaScript, Vite",
+        "bullets": [
+          "Шесть шифров: Цезарь, Атбаш, Виженер, XOR, Base64, Морзе",
+          "Режим взлома: частотный анализ и перебор Цезаря",
+          "Авто-взлом Виженера без знания ключа",
+          "Объяснения алгоритмов и пошаговые примеры"
+        ],
+        "image_url": "/uploads/img-1792173859254-cipher.png",
+        "repo_url": "https://github.com/auryxn/cipher-lab",
+        "sort_order": 10
+      },
+      {
+        "id": 11,
+        "title": "beatgrid",
+        "description": "Веб-секвенсор драм-машины на Web Audio API: 7 дорожек по 16 шагов, управление BPM и свингом, пресеты House, Hip-hop, Breakbeat и Trap. Есть генератор случайного бита, mute по дорожкам, шаринг ссылкой и сохранение проектов прямо в браузере.",
+        "stack": "JavaScript, Vite, Web Audio API",
+        "bullets": [
+          "7 дорожек × 16 шагов с точным таймингом Web Audio",
+          "Управление BPM и свингом, mute по дорожкам",
+          "Пресеты House, Hip-hop, Breakbeat, Trap и рандом",
+          "Шаринг ссылкой и сохранение проектов в браузере"
+        ],
+        "image_url": "/uploads/img-1792173864635-beatgrid.png",
+        "repo_url": "https://github.com/auryxn/beatgrid",
         "sort_order": 11
       }
     ],
     "stack": [
       {
-        "id": 13,
+        "id": 1,
         "name": "HTML",
         "sort_order": 1
       },
       {
-        "id": 14,
+        "id": 2,
         "name": "CSS",
         "sort_order": 2
       },
       {
-        "id": 15,
+        "id": 3,
         "name": "JavaScript",
         "sort_order": 3
       },
       {
-        "id": 1,
+        "id": 4,
         "name": "TypeScript",
         "sort_order": 4
       },
       {
-        "id": 2,
+        "id": 5,
         "name": "React",
         "sort_order": 5
       },
       {
-        "id": 16,
+        "id": 6,
         "name": "Vite",
         "sort_order": 6
       },
       {
-        "id": 17,
+        "id": 7,
         "name": "Tailwind CSS",
         "sort_order": 7
       },
       {
-        "id": 5,
+        "id": 8,
         "name": "Node.js",
         "sort_order": 8
       },
       {
-        "id": 18,
+        "id": 9,
         "name": "Express",
         "sort_order": 9
       },
       {
-        "id": 4,
+        "id": 10,
         "name": "Python",
         "sort_order": 10
       },
       {
-        "id": 19,
+        "id": 11,
         "name": "FastAPI",
         "sort_order": 11
       },
       {
-        "id": 6,
+        "id": 12,
         "name": "PostgreSQL",
         "sort_order": 12
       },
       {
-        "id": 20,
+        "id": 13,
         "name": "SQLite",
         "sort_order": 13
       },
       {
-        "id": 7,
+        "id": 14,
         "name": "Docker",
         "sort_order": 14
       },
       {
-        "id": 21,
+        "id": 15,
         "name": "Git",
         "sort_order": 15
       },
       {
-        "id": 22,
+        "id": 16,
         "name": "Linux",
         "sort_order": 16
       },
       {
-        "id": 23,
+        "id": 17,
         "name": "Java",
         "sort_order": 17
       },
       {
-        "id": 24,
+        "id": 18,
         "name": "Spring Boot",
         "sort_order": 18
       },
       {
-        "id": 25,
+        "id": 19,
         "name": "C#",
         "sort_order": 19
       },
       {
-        "id": 26,
+        "id": 20,
         "name": "Unity",
         "sort_order": 20
       },
       {
-        "id": 27,
+        "id": 21,
         "name": "SQL",
         "sort_order": 21
       },
       {
-        "id": 28,
+        "id": 22,
         "name": "Networking",
         "sort_order": 22
       }
     ],
     "experience": [
       {
-        "id": 5,
+        "id": 1,
         "period": "2024–2028",
         "company": "Университет",
         "description": "Учусь на программиста с 2024 года, выпуск в 2028",
         "sort_order": 1
       },
       {
-        "id": 6,
+        "id": 2,
         "period": "2025",
         "company": "Хакатон Junction",
         "description": "Летал в Финляндию на хакатон Junction — крупнейший в Европе",
         "sort_order": 2
       },
       {
-        "id": 7,
+        "id": 3,
         "period": "2026 →",
         "company": "ООО «У меня локально работает»",
         "description": "Ищу работу. Пока не нашли — работаю на своей машине (локально у меня всё работает).",
@@ -273,28 +318,22 @@
     ],
     "links": [
       {
-        "id": 9,
-        "label": "GitHub",
-        "url": "https://github.com/auryxn",
+        "id": 2,
+        "label": "Telegram",
+        "url": "https://t.me/auryxn",
         "sort_order": 1
       },
       {
-        "id": 10,
-        "label": "Telegram",
-        "url": "#",
+        "id": 1,
+        "label": "GitHub",
+        "url": "https://github.com/auryxn",
         "sort_order": 2
       },
       {
-        "id": 11,
-        "label": "LinkedIn",
-        "url": "#",
+        "id": 5,
+        "label": "Email",
+        "url": "mailto:aliaksei.ioda@gmail.com",
         "sort_order": 3
-      },
-      {
-        "id": 12,
-        "label": "Резюме.pdf (3 МБ, зачем-то)",
-        "url": "#",
-        "sort_order": 4
       }
     ],
     "settings": {
@@ -334,7 +373,6 @@
       "popup.no": "Закрыть",
       "popup.no_final": "Ладно, закрывай",
       "popup.yes": "Да, конечно",
-      "projects.image_placeholder": "[ИЗОБРАЖЕНИЕ НЕ НАЙДЕНО]",
       "projects.repo_link": "[открыть репозиторий →]",
       "projects.stack_label": "Стек:",
       "section.contacts": "КОНТАКТЫ",
@@ -354,14 +392,14 @@
     "profile": {
       "name": "Aliaksei Ioda",
       "title": "Studentas",
-      "years": "0 metų",
+      "years": "3",
       "bio_text": "Ši svetainė <span class=\"red\">tyčia</span> atrodo būtent taip, nes moku padaryti gražiai, bet nusprendžiau, kad jums bus nuobodu.",
       "status": "IEŠKAU DARBO",
       "email": "aliaksei.ioda@gmail.com"
     },
     "projects": [
       {
-        "id": 9,
+        "id": 1,
         "title": "site-admin",
         "description": "Asmeninė Web 1.0 stiliaus portfelio svetainė su administravimo skydeliu.",
         "stack": "React, Vite, Node.js, SQLite",
@@ -376,67 +414,7 @@
         "sort_order": 1
       },
       {
-        "id": 12,
-        "title": "barlink",
-        "description": "Pažinčių baruose žiniatinklio MVP: žemėlapis, susitikimai ir pokalbiai.",
-        "stack": "React, Vite, Tailwind, Leaflet, Express, SQLite",
-        "bullets": [
-          "Interaktyvus Vilniaus barų žemėlapis",
-          "Susitikimų kūrimas ir prisijungimas",
-          "Grupių pokalbiai ir dalyvių sąrašas",
-          "Demo sąsaja telefono rėmelyje"
-        ],
-        "image_url": "/uploads/img-1792166303393-e80a04b8.png",
-        "repo_url": "https://github.com/auryxn/barlink",
-        "sort_order": 4
-      },
-      {
-        "id": 13,
-        "title": "filmrank",
-        "description": "Asmeninis filmų reitingas: Tinder stiliaus braukimai ir dvikovos.",
-        "stack": "React 19, Vite, framer-motion, TMDB API",
-        "bullets": [
-          "Kortelių braukimas iš TMDB katalogo",
-          "Dvikovos: kuris filmas geresnis",
-          "Reitingas ir S–F pakopų sąrašas",
-          "Skonio statistika ir viršūnės eksportas"
-        ],
-        "image_url": "/uploads/img-1792166303410-e61ff381.png",
-        "repo_url": "https://github.com/auryxn/filmrank",
-        "sort_order": 5
-      },
-      {
-        "id": 14,
-        "title": "internet-city",
-        "description": "Interaktyvus 3D modelis, parodantis, kaip veikia internetas.",
-        "stack": "TypeScript, Vite, Three.js, WebGL",
-        "bullets": [
-          "3D scena: paslaugos-pastatai ir paketai-sunkvežimiai",
-          "10 žingsnių nuo URL iki puslapio atvaizdavimo",
-          "„Paprastas“ ir „Techninis“ režimai",
-          "Paketo praradimo simuliacija ir viktorina"
-        ],
-        "image_url": "/uploads/img-1792166303449-f8b37953.png",
-        "repo_url": "https://github.com/auryxn/internet-city",
-        "sort_order": 6
-      },
-      {
-        "id": 16,
-        "title": "baltic-brew",
-        "description": "Vieno puslapio „Baltic Brew“ amatų baro nukreipimo svetainė.",
-        "stack": "HTML, CSS, JavaScript",
-        "bullets": [
-          "Savaitės čiaupų asortimento vitrina",
-          "Galerija ir grupinių užsakymų blokas",
-          "Rezervacijos telefonu forma",
-          "Vienas HTML failas be kūrimo įrankių ir priklausomybių"
-        ],
-        "image_url": "/uploads/img-1792166303501-fe81ff39.png",
-        "repo_url": "https://github.com/auryxn/baltic_brew_preview",
-        "sort_order": 8
-      },
-      {
-        "id": 17,
+        "id": 2,
         "title": "shiftbot",
         "description": "„Telegram“ botas trumpalaikėms uždarbystėms: administratorius skelbia pamainas, darbuotojai užsiregistruoja keliais paspaudimais. Asinchroninis backend su aiogram 3 ir PostgreSQL: darbų būsenos, priminimų planuotojas ir apsauga nuo lenktynių registruojantis.",
         "stack": "Python 3.12, aiogram 3.x, PostgreSQL, SQLAlchemy 2.x, Alembic, Docker",
@@ -448,10 +426,10 @@
         ],
         "image_url": "",
         "repo_url": "https://github.com/auryxn/shiftbot",
-        "sort_order": 9
+        "sort_order": 2
       },
       {
-        "id": 18,
+        "id": 3,
         "title": "content-factory",
         "description": "Vietinis „turinio fabrikas“: ilgus vaizdo įrašus kerpa į trumpus TikTok klipus, uždeda foninę muziką ir tvarko publikavimo tvarkaraštį per žiniatinklio skydelį. Montavimas su ffmpeg, valdymas ir eiga — FastAPI skydelyje.",
         "stack": "Python, FastAPI, Uvicorn, ffmpeg",
@@ -463,10 +441,10 @@
         ],
         "image_url": "",
         "repo_url": "https://github.com/auryxn/content-factory",
-        "sort_order": 10
+        "sort_order": 3
       },
       {
-        "id": 19,
+        "id": 4,
         "title": "homework-hub",
         "description": "Vietinė žiniatinklio programa, skirta „Microsoft Teams“ mokymosi užduotims valdyti: suveda visus terminus į vieną lentą ir automatiškai paleidžia agentus, sprendžiančius užduotis. „Teams“ nuskaitymas vyksta per CDP naršyklę, agento eiga transliuojama į sąsają per SSE.",
         "stack": "Node.js, JavaScript, HTML, CSS",
@@ -478,138 +456,243 @@
         ],
         "image_url": "",
         "repo_url": "https://github.com/auryxn/homework-hub",
+        "sort_order": 4
+      },
+      {
+        "id": 5,
+        "title": "barlink",
+        "description": "Pažinčių baruose žiniatinklio MVP: žemėlapis, susitikimai ir pokalbiai.",
+        "stack": "React, Vite, Tailwind, Leaflet, Express, SQLite",
+        "bullets": [
+          "Interaktyvus Vilniaus barų žemėlapis",
+          "Susitikimų kūrimas ir prisijungimas",
+          "Grupių pokalbiai ir dalyvių sąrašas",
+          "Demo sąsaja telefono rėmelyje"
+        ],
+        "image_url": "/uploads/img-1792166303393-e80a04b8.png",
+        "repo_url": "https://github.com/auryxn/barlink",
+        "sort_order": 5
+      },
+      {
+        "id": 6,
+        "title": "filmrank",
+        "description": "Asmeninis filmų reitingas: Tinder stiliaus braukimai ir dvikovos.",
+        "stack": "React 19, Vite, framer-motion, TMDB API",
+        "bullets": [
+          "Kortelių braukimas iš TMDB katalogo",
+          "Dvikovos: kuris filmas geresnis",
+          "Reitingas ir S–F pakopų sąrašas",
+          "Skonio statistika ir viršūnės eksportas"
+        ],
+        "image_url": "/uploads/img-1792166303410-e61ff381.png",
+        "repo_url": "https://github.com/auryxn/filmrank",
+        "sort_order": 6
+      },
+      {
+        "id": 7,
+        "title": "internet-city",
+        "description": "Interaktyvus 3D modelis, parodantis, kaip veikia internetas.",
+        "stack": "TypeScript, Vite, Three.js, WebGL",
+        "bullets": [
+          "3D scena: paslaugos-pastatai ir paketai-sunkvežimiai",
+          "10 žingsnių nuo URL iki puslapio atvaizdavimo",
+          "„Paprastas“ ir „Techninis“ režimai",
+          "Paketo praradimo simuliacija ir viktorina"
+        ],
+        "image_url": "/uploads/img-1792166303449-f8b37953.png",
+        "repo_url": "https://github.com/auryxn/internet-city",
+        "sort_order": 7
+      },
+      {
+        "id": 8,
+        "title": "yoda-shop",
+        "description": "Demonstracinė internetinė „YODA“ metalinių dėklų parduotuvė tamsiosios fantazijos stiliumi: vitrina, katalogas, krepšelis ir užsakymo apmokėjimas per „Stripe“. Atskiras administravimo skydelis su suvestine, sandėliu, užsakymais, nuolaidų kodais ir turinio redaktoriumi; tamsios ir šviesios temos perjungimas.",
+        "stack": "React, Vite, Node.js, Express, JavaScript, Stripe",
+        "bullets": [
+          "Vitrina, katalogas, prekės kortelė ir krepšelis su pranešimais",
+          "Užsakymo apmokėjimas per „Stripe Checkout“ ir nuolaidų kodai",
+          "Admin skydelis: suvestinė, sandėlis, užsakymai, nuolaidos, baneris ir tekstai",
+          "Tamsi / šviesi tema su pasirinkimo išsaugojimu"
+        ],
+        "image_url": "/uploads/img-1792172735910-bc752472.png",
+        "repo_url": "https://github.com/auryxn/yoda-shop",
+        "sort_order": 8
+      },
+      {
+        "id": 9,
+        "title": "baltic-brew",
+        "description": "Vieno puslapio „Baltic Brew“ amatų baro nukreipimo svetainė.",
+        "stack": "HTML, CSS, JavaScript",
+        "bullets": [
+          "Savaitės čiaupų asortimento vitrina",
+          "Galerija ir grupinių užsakymų blokas",
+          "Rezervacijos telefonu forma",
+          "Vienas HTML failas be kūrimo įrankių ir priklausomybių"
+        ],
+        "image_url": "/uploads/img-1792166303501-fe81ff39.png",
+        "repo_url": "https://github.com/auryxn/baltic_brew_preview",
+        "sort_order": 9
+      },
+      {
+        "id": 10,
+        "title": "cipher-lab",
+        "description": "Klasikinių šifrų laboratorija naršyklėje: šifruok ir dešifruok Cezario, Atbash, Vigenère, XOR, Base64 ir Morzės kodus. Atskiras „lūžimo“ režimas bando dažnių analizę, visų Cezario raktų perrinkimą ir automatinį Vigenère įsilaužimą be rakto.",
+        "stack": "JavaScript, Vite",
+        "bullets": [
+          "Šeši šifrai: Cezaris, Atbash, Vigenère, XOR, Base64, Morzė",
+          "Lūžimo režimas: dažnių analizė ir Cezario perrinkimas",
+          "Automatinis Vigenère įsilaužimas be rakto",
+          "Algoritmų paaiškinimai ir pavyzdžiai žingsnis po žingsnio"
+        ],
+        "image_url": "/uploads/img-1792173859254-cipher.png",
+        "repo_url": "https://github.com/auryxn/cipher-lab",
+        "sort_order": 10
+      },
+      {
+        "id": 11,
+        "title": "beatgrid",
+        "description": "Žiniatinklio būgnų mašinos sekvenceris su Web Audio API: 7 takeliai po 16 žingsnių, BPM ir swing valdymas, House, Hip-hop, Breakbeat ir Trap presetai. Yra atsitiktinio bito generatorius, takelių mute, bendrinimas nuoroda ir projektų išsaugojimas naršyklėje.",
+        "stack": "JavaScript, Vite, Web Audio API",
+        "bullets": [
+          "7 takeliai × 16 žingsnių su tiksliu Web Audio laiku",
+          "BPM ir swing valdymas, takelių mute",
+          "House, Hip-hop, Breakbeat, Trap presetai ir atsitiktinis",
+          "Bendrinimas nuoroda ir projektų išsaugojimas naršyklėje"
+        ],
+        "image_url": "/uploads/img-1792173864635-beatgrid.png",
+        "repo_url": "https://github.com/auryxn/beatgrid",
         "sort_order": 11
       }
     ],
     "stack": [
       {
-        "id": 13,
+        "id": 1,
         "name": "HTML",
         "sort_order": 1
       },
       {
-        "id": 14,
+        "id": 2,
         "name": "CSS",
         "sort_order": 2
       },
       {
-        "id": 15,
+        "id": 3,
         "name": "JavaScript",
         "sort_order": 3
       },
       {
-        "id": 1,
+        "id": 4,
         "name": "TypeScript",
         "sort_order": 4
       },
       {
-        "id": 2,
+        "id": 5,
         "name": "React",
         "sort_order": 5
       },
       {
-        "id": 16,
+        "id": 6,
         "name": "Vite",
         "sort_order": 6
       },
       {
-        "id": 17,
+        "id": 7,
         "name": "Tailwind CSS",
         "sort_order": 7
       },
       {
-        "id": 5,
+        "id": 8,
         "name": "Node.js",
         "sort_order": 8
       },
       {
-        "id": 18,
+        "id": 9,
         "name": "Express",
         "sort_order": 9
       },
       {
-        "id": 4,
+        "id": 10,
         "name": "Python",
         "sort_order": 10
       },
       {
-        "id": 19,
+        "id": 11,
         "name": "FastAPI",
         "sort_order": 11
       },
       {
-        "id": 6,
+        "id": 12,
         "name": "PostgreSQL",
         "sort_order": 12
       },
       {
-        "id": 20,
+        "id": 13,
         "name": "SQLite",
         "sort_order": 13
       },
       {
-        "id": 7,
+        "id": 14,
         "name": "Docker",
         "sort_order": 14
       },
       {
-        "id": 21,
+        "id": 15,
         "name": "Git",
         "sort_order": 15
       },
       {
-        "id": 22,
+        "id": 16,
         "name": "Linux",
         "sort_order": 16
       },
       {
-        "id": 23,
+        "id": 17,
         "name": "Java",
         "sort_order": 17
       },
       {
-        "id": 24,
+        "id": 18,
         "name": "Spring Boot",
         "sort_order": 18
       },
       {
-        "id": 25,
+        "id": 19,
         "name": "C#",
         "sort_order": 19
       },
       {
-        "id": 26,
+        "id": 20,
         "name": "Unity",
         "sort_order": 20
       },
       {
-        "id": 27,
+        "id": 21,
         "name": "SQL",
         "sort_order": 21
       },
       {
-        "id": 28,
+        "id": 22,
         "name": "Networking",
         "sort_order": 22
       }
     ],
     "experience": [
       {
-        "id": 5,
+        "id": 1,
         "period": "2024–2028",
         "company": "Vilniaus universitetas",
         "description": "Studijuoju programavimą nuo 2024 m., baigiu 2028 m.",
         "sort_order": 1
       },
       {
-        "id": 6,
+        "id": 2,
         "period": "2025",
         "company": "Junction hakatonas",
         "description": "Skridau į Suomiją į Junction, didžiausią Europos hakatoną",
         "sort_order": 2
       },
       {
-        "id": 7,
+        "id": 3,
         "period": "2026 →",
         "company": "UAB „Pas mane lokaliai veikia“",
         "description": "Ieškau darbo. Kol neradau — dirbu savo kompiuteryje (pas mane lokaliai viskas veikia).",
@@ -618,28 +701,22 @@
     ],
     "links": [
       {
-        "id": 9,
-        "label": "GitHub",
-        "url": "https://github.com/auryxn",
+        "id": 2,
+        "label": "Telegram",
+        "url": "https://t.me/auryxn",
         "sort_order": 1
       },
       {
-        "id": 10,
-        "label": "Telegram",
-        "url": "#",
+        "id": 1,
+        "label": "GitHub",
+        "url": "https://github.com/auryxn",
         "sort_order": 2
       },
       {
-        "id": 11,
-        "label": "LinkedIn",
-        "url": "#",
+        "id": 5,
+        "label": "El. paštas",
+        "url": "mailto:aliaksei.ioda@gmail.com",
         "sort_order": 3
-      },
-      {
-        "id": 12,
-        "label": "CV.pdf (3 MB, kam gi)",
-        "url": "#",
-        "sort_order": 4
       }
     ],
     "settings": {
@@ -679,7 +756,6 @@
       "popup.no": "Uždaryti",
       "popup.no_final": "Gerai, uždaryk",
       "popup.yes": "Taip, žinoma",
-      "projects.image_placeholder": "[VAIZDAS NERASTAS]",
       "projects.repo_link": "[atidaryti repozitoriją →]",
       "projects.stack_label": "Stack:",
       "section.contacts": "KONTAKTAI",
@@ -699,14 +775,14 @@
     "profile": {
       "name": "Aliaksei Ioda",
       "title": "Student",
-      "years": "0 years",
+      "years": "3",
       "bio_text": "This site <span class=\"red\">deliberately</span> looks like this, because I can make it pretty, but I decided you would be bored.",
       "status": "LOOKING FOR WORK",
       "email": "aliaksei.ioda@gmail.com"
     },
     "projects": [
       {
-        "id": 9,
+        "id": 1,
         "title": "site-admin",
         "description": "Personal Web 1.0 style portfolio site with an admin panel.",
         "stack": "React, Vite, Node.js, SQLite",
@@ -721,67 +797,7 @@
         "sort_order": 1
       },
       {
-        "id": 12,
-        "title": "barlink",
-        "description": "A web MVP for dating in bars: map, meetups and chat.",
-        "stack": "React, Vite, Tailwind, Leaflet, Express, SQLite",
-        "bullets": [
-          "Interactive map of Vilnius bars",
-          "Creating and joining meetups",
-          "Group chat and participant list",
-          "Demo interface in a phone frame"
-        ],
-        "image_url": "/uploads/img-1792166303393-e80a04b8.png",
-        "repo_url": "https://github.com/auryxn/barlink",
-        "sort_order": 4
-      },
-      {
-        "id": 13,
-        "title": "filmrank",
-        "description": "A personal movie ranking: Tinder-style swipes and duels.",
-        "stack": "React 19, Vite, framer-motion, TMDB API",
-        "bullets": [
-          "Swipe deck of cards from the TMDB catalog",
-          "Duels: which movie is better",
-          "Ranking and S–F tier list",
-          "Taste statistics and top export"
-        ],
-        "image_url": "/uploads/img-1792166303410-e61ff381.png",
-        "repo_url": "https://github.com/auryxn/filmrank",
-        "sort_order": 5
-      },
-      {
-        "id": 14,
-        "title": "internet-city",
-        "description": "An interactive 3D model of how the internet works.",
-        "stack": "TypeScript, Vite, Three.js, WebGL",
-        "bullets": [
-          "3D scene: services as buildings, packets as trucks",
-          "10 steps from URL to page render",
-          "“Simple” and “Technical” modes",
-          "Packet-loss simulation and a quiz"
-        ],
-        "image_url": "/uploads/img-1792166303449-f8b37953.png",
-        "repo_url": "https://github.com/auryxn/internet-city",
-        "sort_order": 6
-      },
-      {
-        "id": 16,
-        "title": "baltic-brew",
-        "description": "A one-page landing for the Baltic Brew craft beer bar.",
-        "stack": "HTML, CSS, JavaScript",
-        "bullets": [
-          "Weekly tap assortment showcase",
-          "Gallery and group-order block",
-          "Phone reservation form",
-          "A single HTML file, no build or dependencies"
-        ],
-        "image_url": "/uploads/img-1792166303501-fe81ff39.png",
-        "repo_url": "https://github.com/auryxn/baltic_brew_preview",
-        "sort_order": 8
-      },
-      {
-        "id": 17,
+        "id": 2,
         "title": "shiftbot",
         "description": "A Telegram bot for short-term gig work: an admin posts shifts and workers sign up in a couple of taps. Asynchronous backend on aiogram 3 and PostgreSQL with job statuses, a reminder scheduler and race-safe sign-up.",
         "stack": "Python 3.12, aiogram 3.x, PostgreSQL, SQLAlchemy 2.x, Alembic, Docker",
@@ -793,10 +809,10 @@
         ],
         "image_url": "",
         "repo_url": "https://github.com/auryxn/shiftbot",
-        "sort_order": 9
+        "sort_order": 2
       },
       {
-        "id": 18,
+        "id": 3,
         "title": "content-factory",
         "description": "A local “content factory”: cuts long videos into short TikTok clips, mixes in background music and manages a publish schedule through a web dashboard. ffmpeg for the montage, FastAPI for control and progress.",
         "stack": "Python, FastAPI, Uvicorn, ffmpeg",
@@ -808,10 +824,10 @@
         ],
         "image_url": "",
         "repo_url": "https://github.com/auryxn/content-factory",
-        "sort_order": 10
+        "sort_order": 3
       },
       {
-        "id": 19,
+        "id": 4,
         "title": "homework-hub",
         "description": "A local web app for managing Microsoft Teams assignments: it pulls every deadline onto one board and automatically runs agents that solve the tasks. Teams is scraped via a CDP browser and agent progress streams to the UI over SSE.",
         "stack": "Node.js, JavaScript, HTML, CSS",
@@ -823,138 +839,243 @@
         ],
         "image_url": "",
         "repo_url": "https://github.com/auryxn/homework-hub",
+        "sort_order": 4
+      },
+      {
+        "id": 5,
+        "title": "barlink",
+        "description": "A web MVP for dating in bars: map, meetups and chat.",
+        "stack": "React, Vite, Tailwind, Leaflet, Express, SQLite",
+        "bullets": [
+          "Interactive map of Vilnius bars",
+          "Creating and joining meetups",
+          "Group chat and participant list",
+          "Demo interface in a phone frame"
+        ],
+        "image_url": "/uploads/img-1792166303393-e80a04b8.png",
+        "repo_url": "https://github.com/auryxn/barlink",
+        "sort_order": 5
+      },
+      {
+        "id": 6,
+        "title": "filmrank",
+        "description": "A personal movie ranking: Tinder-style swipes and duels.",
+        "stack": "React 19, Vite, framer-motion, TMDB API",
+        "bullets": [
+          "Swipe deck of cards from the TMDB catalog",
+          "Duels: which movie is better",
+          "Ranking and S–F tier list",
+          "Taste statistics and top export"
+        ],
+        "image_url": "/uploads/img-1792166303410-e61ff381.png",
+        "repo_url": "https://github.com/auryxn/filmrank",
+        "sort_order": 6
+      },
+      {
+        "id": 7,
+        "title": "internet-city",
+        "description": "An interactive 3D model of how the internet works.",
+        "stack": "TypeScript, Vite, Three.js, WebGL",
+        "bullets": [
+          "3D scene: services as buildings, packets as trucks",
+          "10 steps from URL to page render",
+          "“Simple” and “Technical” modes",
+          "Packet-loss simulation and a quiz"
+        ],
+        "image_url": "/uploads/img-1792166303449-f8b37953.png",
+        "repo_url": "https://github.com/auryxn/internet-city",
+        "sort_order": 7
+      },
+      {
+        "id": 8,
+        "title": "yoda-shop",
+        "description": "A demo YODA metal phone-case storefront in a dark-fantasy style: showcase, catalog, cart and checkout via Stripe. A separate admin panel with a dashboard, inventory, orders, promo codes and a content editor, plus a dark/light theme toggle.",
+        "stack": "React, Vite, Node.js, Express, JavaScript, Stripe",
+        "bullets": [
+          "Showcase, catalog, product page and cart with toast notifications",
+          "Checkout via Stripe Checkout and promo codes",
+          "Admin panel: dashboard, inventory, orders, discounts, banner and texts",
+          "Dark / light theme with saved preference"
+        ],
+        "image_url": "/uploads/img-1792172735910-bc752472.png",
+        "repo_url": "https://github.com/auryxn/yoda-shop",
+        "sort_order": 8
+      },
+      {
+        "id": 9,
+        "title": "baltic-brew",
+        "description": "A one-page landing for the Baltic Brew craft beer bar.",
+        "stack": "HTML, CSS, JavaScript",
+        "bullets": [
+          "Weekly tap assortment showcase",
+          "Gallery and group-order block",
+          "Phone reservation form",
+          "A single HTML file, no build or dependencies"
+        ],
+        "image_url": "/uploads/img-1792166303501-fe81ff39.png",
+        "repo_url": "https://github.com/auryxn/baltic_brew_preview",
+        "sort_order": 9
+      },
+      {
+        "id": 10,
+        "title": "cipher-lab",
+        "description": "A browser lab for classic ciphers: encode and decode Caesar, Atbash, Vigenère, XOR, Base64 and Morse. A dedicated crack mode runs frequency analysis, a full Caesar key brute-force, and automatic Vigenère cracking without the key.",
+        "stack": "JavaScript, Vite",
+        "bullets": [
+          "Six ciphers: Caesar, Atbash, Vigenère, XOR, Base64, Morse",
+          "Crack mode: frequency analysis and Caesar brute-force",
+          "Automatic Vigenère cracking without the key",
+          "Algorithm explanations and step-by-step examples"
+        ],
+        "image_url": "/uploads/img-1792173859254-cipher.png",
+        "repo_url": "https://github.com/auryxn/cipher-lab",
+        "sort_order": 10
+      },
+      {
+        "id": 11,
+        "title": "beatgrid",
+        "description": "A web drum-machine sequencer built on Web Audio API: 7 tracks × 16 steps, BPM and swing control, and House, Hip-hop, Breakbeat and Trap presets. It includes a random beat generator, per-track mute, share-by-link and browser-local saving.",
+        "stack": "JavaScript, Vite, Web Audio API",
+        "bullets": [
+          "7 tracks × 16 steps with precise Web Audio timing",
+          "BPM and swing control, per-track mute",
+          "House, Hip-hop, Breakbeat, Trap presets plus random",
+          "Share-by-link and browser-local project saving"
+        ],
+        "image_url": "/uploads/img-1792173864635-beatgrid.png",
+        "repo_url": "https://github.com/auryxn/beatgrid",
         "sort_order": 11
       }
     ],
     "stack": [
       {
-        "id": 13,
+        "id": 1,
         "name": "HTML",
         "sort_order": 1
       },
       {
-        "id": 14,
+        "id": 2,
         "name": "CSS",
         "sort_order": 2
       },
       {
-        "id": 15,
+        "id": 3,
         "name": "JavaScript",
         "sort_order": 3
       },
       {
-        "id": 1,
+        "id": 4,
         "name": "TypeScript",
         "sort_order": 4
       },
       {
-        "id": 2,
+        "id": 5,
         "name": "React",
         "sort_order": 5
       },
       {
-        "id": 16,
+        "id": 6,
         "name": "Vite",
         "sort_order": 6
       },
       {
-        "id": 17,
+        "id": 7,
         "name": "Tailwind CSS",
         "sort_order": 7
       },
       {
-        "id": 5,
+        "id": 8,
         "name": "Node.js",
         "sort_order": 8
       },
       {
-        "id": 18,
+        "id": 9,
         "name": "Express",
         "sort_order": 9
       },
       {
-        "id": 4,
+        "id": 10,
         "name": "Python",
         "sort_order": 10
       },
       {
-        "id": 19,
+        "id": 11,
         "name": "FastAPI",
         "sort_order": 11
       },
       {
-        "id": 6,
+        "id": 12,
         "name": "PostgreSQL",
         "sort_order": 12
       },
       {
-        "id": 20,
+        "id": 13,
         "name": "SQLite",
         "sort_order": 13
       },
       {
-        "id": 7,
+        "id": 14,
         "name": "Docker",
         "sort_order": 14
       },
       {
-        "id": 21,
+        "id": 15,
         "name": "Git",
         "sort_order": 15
       },
       {
-        "id": 22,
+        "id": 16,
         "name": "Linux",
         "sort_order": 16
       },
       {
-        "id": 23,
+        "id": 17,
         "name": "Java",
         "sort_order": 17
       },
       {
-        "id": 24,
+        "id": 18,
         "name": "Spring Boot",
         "sort_order": 18
       },
       {
-        "id": 25,
+        "id": 19,
         "name": "C#",
         "sort_order": 19
       },
       {
-        "id": 26,
+        "id": 20,
         "name": "Unity",
         "sort_order": 20
       },
       {
-        "id": 27,
+        "id": 21,
         "name": "SQL",
         "sort_order": 21
       },
       {
-        "id": 28,
+        "id": 22,
         "name": "Networking",
         "sort_order": 22
       }
     ],
     "experience": [
       {
-        "id": 5,
+        "id": 1,
         "period": "2024–2028",
         "company": "University",
         "description": "Studying Computer Science since 2024, graduating in 2028",
         "sort_order": 1
       },
       {
-        "id": 6,
+        "id": 2,
         "period": "2025",
         "company": "Junction Hackathon",
         "description": "Flew to Finland for Junction, Europe's biggest hackathon",
         "sort_order": 2
       },
       {
-        "id": 7,
+        "id": 3,
         "period": "2026 →",
         "company": "Works On My Machine LLC",
         "description": "Looking for work. Until I'm hired, I work on my own machine (it works locally for me).",
@@ -963,28 +1084,22 @@
     ],
     "links": [
       {
-        "id": 9,
-        "label": "GitHub",
-        "url": "https://github.com/auryxn",
+        "id": 2,
+        "label": "Telegram",
+        "url": "https://t.me/auryxn",
         "sort_order": 1
       },
       {
-        "id": 10,
-        "label": "Telegram",
-        "url": "#",
+        "id": 1,
+        "label": "GitHub",
+        "url": "https://github.com/auryxn",
         "sort_order": 2
       },
       {
-        "id": 11,
-        "label": "LinkedIn",
-        "url": "#",
+        "id": 5,
+        "label": "Email",
+        "url": "mailto:aliaksei.ioda@gmail.com",
         "sort_order": 3
-      },
-      {
-        "id": 12,
-        "label": "Resume.pdf (3 MB, for some reason)",
-        "url": "#",
-        "sort_order": 4
       }
     ],
     "settings": {
@@ -1024,7 +1139,6 @@
       "popup.no": "Close",
       "popup.no_final": "Fine, close it",
       "popup.yes": "Yes, of course",
-      "projects.image_placeholder": "[IMAGE NOT FOUND]",
       "projects.repo_link": "[open repository →]",
       "projects.stack_label": "Stack:",
       "section.contacts": "CONTACTS",

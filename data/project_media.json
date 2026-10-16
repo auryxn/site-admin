@@ -30,5 +30,13 @@
   "yoda-shop": {
     "image_url": "/uploads/img-1792172735910-bc752472.png",
     "repo_url": "https://github.com/auryxn/yoda-shop"
+  },
+  "cipher-lab": {
+    "image_url": "/uploads/img-1792173859254-cipher.png",
+    "repo_url": "https://github.com/auryxn/cipher-lab"
+  },
+  "beatgrid": {
+    "image_url": "/uploads/img-1792173864635-beatgrid.png",
+    "repo_url": "https://github.com/auryxn/beatgrid"
   }
 }
