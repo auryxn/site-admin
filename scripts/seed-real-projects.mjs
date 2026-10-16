@@ -38,6 +38,7 @@ const PROJECTS = [
   { title: 'filmrank', shot: 'filmrank/mobile.png', repo: 'filmrank' },
   { title: 'internet-city', shot: 'internet-city/desktop.png', repo: 'internet-city' },
   { title: 'baltic-brew', shot: 'baltic_brew_preview/desktop.png', repo: 'baltic_brew_preview' },
+  { title: 'yoda-shop', shot: 'yoda-shop/desktop.png', repo: 'yoda-shop' },
 ];
 
 async function login() {

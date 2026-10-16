@@ -274,6 +274,21 @@ const SEED_PROJECTS = [
     },
   },
   {
+    repo_url: 'https://github.com/auryxn/yoda-shop',
+    title: { ru: 'yoda-shop', lt: 'yoda-shop', en: 'yoda-shop' },
+    description: {
+      ru: 'Демо интернет-магазина металлических чехлов YODA в духе тёмного фэнтези: витрина, каталог, корзина и оформление заказа через Stripe. Отдельная админ-панель с дашбордом, складом, заказами, промокодами и редактором контента; переключатель тёмной и светлой темы.',
+      lt: 'Demonstracinė internetinė „YODA“ metalinių dėklų parduotuvė tamsiosios fantazijos stiliumi: vitrina, katalogas, krepšelis ir užsakymo apmokėjimas per „Stripe“. Atskiras administravimo skydelis su suvestine, sandėliu, užsakymais, nuolaidų kodais ir turinio redaktoriumi; tamsios ir šviesios temos perjungimas.',
+      en: 'A demo YODA metal phone-case storefront in a dark-fantasy style: showcase, catalog, cart and checkout via Stripe. A separate admin panel with a dashboard, inventory, orders, promo codes and a content editor, plus a dark/light theme toggle.',
+    },
+    stack: { ru: 'React, Vite, Node.js, Express, JavaScript, Stripe', lt: 'React, Vite, Node.js, Express, JavaScript, Stripe', en: 'React, Vite, Node.js, Express, JavaScript, Stripe' },
+    bullets: {
+      ru: ['Витрина, каталог, карточка товара и корзина с уведомлениями', 'Оформление заказа через Stripe Checkout и промокоды', 'Админ-панель: дашборд, склад, заказы, скидки, баннер и тексты', 'Тёмная / светлая тема с сохранением выбора'],
+      lt: ['Vitrina, katalogas, prekės kortelė ir krepšelis su pranešimais', 'Užsakymo apmokėjimas per „Stripe Checkout“ ir nuolaidų kodai', 'Admin skydelis: suvestinė, sandėlis, užsakymai, nuolaidos, baneris ir tekstai', 'Tamsi / šviesi tema su pasirinkimo išsaugojimu'],
+      en: ['Showcase, catalog, product page and cart with toast notifications', 'Checkout via Stripe Checkout and promo codes', 'Admin panel: dashboard, inventory, orders, discounts, banner and texts', 'Dark / light theme with saved preference'],
+    },
+  },
+  {
     title: { ru: 'baltic-brew', lt: 'baltic-brew', en: 'baltic-brew' },
     description: {
       ru: 'Одностраничный лендинг крафтового бара Baltic Brew.',

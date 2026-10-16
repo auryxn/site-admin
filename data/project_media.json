@@ -26,5 +26,9 @@
   "baltic-brew": {
     "image_url": "/uploads/img-1792166303501-fe81ff39.png",
     "repo_url": "https://github.com/auryxn/baltic_brew_preview"
+  },
+  "yoda-shop": {
+    "image_url": "/uploads/img-1792172735910-bc752472.png",
+    "repo_url": "https://github.com/auryxn/yoda-shop"
   }
 }
