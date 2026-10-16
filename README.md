@@ -55,7 +55,7 @@ cp uploads/*.png dist-pages/uploads/ && touch dist-pages/.nojekyll
 |------------------|-------------------------------------------------------------------------|
 | `PORT`           | порт API-сервера (Render задаёт сам; локально по умолчанию 4200)        |
 | `ADMIN_USER`     | логин админа (по умолчанию `admin`)                                     |
-| `ADMIN_PASSWORD` | пароль админа (по умолчанию `admin123`; на хосте — задайте секрет)      |
+| `ADMIN_PASSWORD` | пароль админа (по умолчанию `empty`)      |
 | `SESSION_SECRET` | секрет для подписи токенов админки (fallback: `SITE_SECRET`)            |
 | `DB_PATH`        | путь к SQLite-файлу (по умолчанию `<repo>/site.sqlite`; на Render → `/tmp`) |
 | `UPLOADS_DIR`    | папка загруженных картинок (по умолчанию `<repo>/uploads`)              |
